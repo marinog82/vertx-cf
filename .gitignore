@@ -1,0 +1,11 @@
+.settings
+target
+.vscode
+.project
+.classpath
+.vertx
+*.log
+pom.xml.versionsBackup
+.idea
+*.iml
+.factorypath
