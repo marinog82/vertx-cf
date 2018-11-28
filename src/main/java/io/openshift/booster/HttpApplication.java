@@ -33,6 +33,7 @@ public class HttpApplication extends AbstractVerticle {
 
         Router router = Router.router(vertx);
         router.get("/api/greeting").handler(this::greeting);
+        router.get("/api/cf").handler(this::getCF);
         router.get("/health").handler(rc -> rc.response().end("OK"));
         router.get("/").handler(StaticHandler.create());
 
@@ -77,6 +78,63 @@ public class HttpApplication extends AbstractVerticle {
         LoggerConfig loggerConfig = config.getLoggerConfig(LogManager.ROOT_LOGGER_NAME);
         loggerConfig.setLevel(Level.getLevel(level));
         ctx.updateLoggers();
+    }
+
+    private void getCF(RoutingContext rc) {
+        if (message == null) {
+            rc.response().setStatusCode(500)
+                .putHeader(CONTENT_TYPE, "application/json; charset=utf-8")
+                .end(new JsonObject().put("content", "no config map").encode());
+            return;
+        }
+        String nome = rc.request().getParam("nome");
+        if (nome == null) {
+            nome = "Giuseppe";
+        }
+        String cognome = rc.request().getParam("cognome");
+        if (cognome == null) {
+            cognome = "Marino";
+        }
+        String comune = rc.request().getParam("comune");
+        if (comune == null) {
+            comune = "Novellara";
+        }
+        comune = comune.toUpperCase(); 
+
+        String m = rc.request().getParam("m");
+        if (m == null) {
+            m = "Aprile";
+        }
+
+        String annoString = rc.request().getParam("anno");
+        if (annoString == null) {
+            annoString = "1982";
+        }
+        int anno = Integer.parseInt(annoString);
+
+        String giornoString = rc.request().getParam("giorno");
+        if (giornoString == null) {
+            giornoString = "22";
+        }
+        int giorno = Integer.parseInt(annoString);
+
+        String sesso = rc.request().getParam("M");
+        if (sesso == null) {
+            sesso = "M";
+        }
+        try {
+            CFGenerator gen = new CFGenerator(nome,  cognome,  comune,  m,  anno, giorno, sesso);
+            // LOGGER.debug("Replying to request, nome={}, cognome={}, comune={}, m={}, anno={}, giorno={}, sesso={}", nome,cognome,comune,m,anno,giorno,sesso);
+            JsonObject response = new JsonObject()
+                .put("content", gen.toString());
+    
+            rc.response()
+                .putHeader(CONTENT_TYPE, "application/json; charset=utf-8")
+                .end(response.encodePrettily());                
+        } catch (Exception e) {
+            e.printStackTrace();
+            LOGGER.error(e.getMessage());
+        }
     }
 
     private void greeting(RoutingContext rc) {
