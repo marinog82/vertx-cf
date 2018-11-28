@@ -1,4 +1,4 @@
-= Externalized Configuration - Eclipse Vert.x Booster
+= Externalized Configuration - Eclipse Vert.x Booster X
 
 IMPORTANT: While you can run and interact with this booster on localhost, you cannot take advantage of using externalized configuration with this booster without using OpenShift. For more details on using this booster with a single-node OpenShift cluster, CI/CD deployments, as well as the rest of the runtime, see the link:http://launcher.fabric8.io/docs/vertx-runtime.html[Eclipse Vert.x Runtime Guide].
 
