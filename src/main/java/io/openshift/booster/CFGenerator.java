@@ -207,7 +207,7 @@ class CFGenerator {
       while(scanner.hasNext()) {
         String s1 = scanner.nextLine();
         String s2 = s1.substring(0,s1.indexOf('-')-1);
-        System.out.println(s2);
+        // System.out.println(s2);
         if(s2.equalsIgnoreCase(comune)) {
           cc = s1.substring(s1.lastIndexOf(' ')+1);
         }

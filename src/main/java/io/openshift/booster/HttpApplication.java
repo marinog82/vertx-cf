@@ -37,29 +37,25 @@ public class HttpApplication extends AbstractVerticle {
         router.get("/health").handler(rc -> rc.response().end("OK"));
         router.get("/").handler(StaticHandler.create());
 
-        retrieveMessageTemplateFromConfiguration()
-            .setHandler(ar -> {
-                // Once retrieved, store it and start the HTTP server.
-                message = ar.result();
-                vertx
-                    .createHttpServer()
-                    .requestHandler(router::accept)
-                    .listen(
-                        // Retrieve the port from the configuration,
-                        // default to 8080.
-                        config().getInteger("http.port", 8080));
+        retrieveMessageTemplateFromConfiguration().setHandler(ar -> {
+            // Once retrieved, store it and start the HTTP server.
+            message = ar.result();
+            vertx.createHttpServer().requestHandler(router::accept).listen(
+                    // Retrieve the port from the configuration,
+                    // default to 8080.
+                    config().getInteger("http.port", 8080));
 
-            });
+        });
 
-        // It should use the retrieve.listen method, however it does not catch the deletion of the config map.
+        // It should use the retrieve.listen method, however it does not catch the
+        // deletion of the config map.
         // https://github.com/vert-x3/vertx-config/issues/7
         vertx.setPeriodic(2000, l -> {
             conf.getConfig(ar -> {
                 if (ar.succeeded()) {
                     if (config == null || !config.encode().equals(ar.result().encode())) {
                         config = ar.result();
-                        LOGGER.info("New configuration retrieved: {}",
-                            ar.result().getString("message"));
+                        LOGGER.info("New configuration retrieved: {}", ar.result().getString("message"));
                         message = ar.result().getString("message");
                         String level = ar.result().getString("level", "INFO");
                         LOGGER.info("New log level: {}", level);
@@ -81,56 +77,53 @@ public class HttpApplication extends AbstractVerticle {
     }
 
     private void getCF(RoutingContext rc) {
-        if (message == null) {
-            rc.response().setStatusCode(500)
-                .putHeader(CONTENT_TYPE, "application/json; charset=utf-8")
-                .end(new JsonObject().put("content", "no config map").encode());
-            return;
-        }
-        String nome = rc.request().getParam("nome");
-        if (nome == null) {
-            nome = "Giuseppe";
-        }
-        String cognome = rc.request().getParam("cognome");
-        if (cognome == null) {
-            cognome = "Marino";
-        }
-        String comune = rc.request().getParam("comune");
-        if (comune == null) {
-            comune = "Novellara";
-        }
-        comune = comune.toUpperCase(); 
-
-        String m = rc.request().getParam("m");
-        if (m == null) {
-            m = "Aprile";
-        }
-
-        String annoString = rc.request().getParam("anno");
-        if (annoString == null) {
-            annoString = "1982";
-        }
-        int anno = Integer.parseInt(annoString);
-
-        String giornoString = rc.request().getParam("giorno");
-        if (giornoString == null) {
-            giornoString = "22";
-        }
-        int giorno = Integer.parseInt(annoString);
-
-        String sesso = rc.request().getParam("M");
-        if (sesso == null) {
-            sesso = "M";
-        }
         try {
-            CFGenerator gen = new CFGenerator(nome,  cognome,  comune,  m,  anno, giorno, sesso);
-            // LOGGER.debug("Replying to request, nome={}, cognome={}, comune={}, m={}, anno={}, giorno={}, sesso={}", nome,cognome,comune,m,anno,giorno,sesso);
-            JsonObject response = new JsonObject()
-                .put("content", gen.toString());
-    
-            rc.response()
-                .putHeader(CONTENT_TYPE, "application/json; charset=utf-8")
-                .end(response.encodePrettily());                
+            if (message == null) {
+                rc.response().setStatusCode(500).putHeader(CONTENT_TYPE, "application/json; charset=utf-8")
+                        .end(new JsonObject().put("content", "no config map").encode());
+                return;
+            }
+            String nome = rc.request().getParam("nome");
+            if (nome == null) {
+                nome = "Giuseppe";
+            }
+            String cognome = rc.request().getParam("cognome");
+            if (cognome == null) {
+                cognome = "Marino";
+            }
+            String comune = rc.request().getParam("comune");
+            if (comune == null) {
+                comune = "Novellara";
+            }
+            comune = comune.toUpperCase();
+
+            String m = rc.request().getParam("m");
+            if (m == null) {
+                m = "Luglio";
+            }
+
+            String annoString = rc.request().getParam("anno");
+            if (annoString == null) {
+                annoString = "1982";
+            }
+            int anno = Integer.parseInt(annoString);
+
+            String giornoString = rc.request().getParam("giorno");
+            if (giornoString == null) {
+                giornoString = "22";
+            }
+            int giorno = Integer.parseInt(giornoString);
+
+            String sesso = rc.request().getParam("sesso");
+            if (sesso == null) {
+                sesso = "M";
+            }
+            CFGenerator gen = new CFGenerator(nome, cognome, comune, m, anno, giorno, sesso);
+            LOGGER.info("Replying to request, nome={}, cognome={}, comune={}, m={}, anno={}, giorno={}, sesso={}", nome,
+                    cognome, comune, m, anno, giorno, sesso);
+            JsonObject response = new JsonObject().put("content", gen.toString());
+
+            rc.response().putHeader(CONTENT_TYPE, "application/json; charset=utf-8").end(response.encodePrettily());
         } catch (Exception e) {
             e.printStackTrace();
             LOGGER.error(e.getMessage());
@@ -139,9 +132,8 @@ public class HttpApplication extends AbstractVerticle {
 
     private void greeting(RoutingContext rc) {
         if (message == null) {
-            rc.response().setStatusCode(500)
-                .putHeader(CONTENT_TYPE, "application/json; charset=utf-8")
-                .end(new JsonObject().put("content", "no config map").encode());
+            rc.response().setStatusCode(500).putHeader(CONTENT_TYPE, "application/json; charset=utf-8")
+                    .end(new JsonObject().put("content", "no config map").encode());
             return;
         }
         String name = rc.request().getParam("name");
@@ -150,20 +142,14 @@ public class HttpApplication extends AbstractVerticle {
         }
 
         LOGGER.debug("Replying to request, parameter={}", name);
-        JsonObject response = new JsonObject()
-            .put("content", String.format(message, name));
+        JsonObject response = new JsonObject().put("content", String.format(message, name));
 
-        rc.response()
-            .putHeader(CONTENT_TYPE, "application/json; charset=utf-8")
-            .end(response.encodePrettily());
+        rc.response().putHeader(CONTENT_TYPE, "application/json; charset=utf-8").end(response.encodePrettily());
     }
 
     private Future<String> retrieveMessageTemplateFromConfiguration() {
         Future<String> future = Future.future();
-        conf.getConfig(ar ->
-            future.handle(ar
-                .map(json -> json.getString("message"))
-                .otherwise(t -> null)));
+        conf.getConfig(ar -> future.handle(ar.map(json -> json.getString("message")).otherwise(t -> null)));
         return future;
     }
 }
