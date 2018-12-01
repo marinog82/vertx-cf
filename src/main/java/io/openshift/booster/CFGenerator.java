@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 import java.io.File;
+import java.io.InputStream;
 import java.net.URL;
 
 class CFGenerator {
@@ -198,10 +199,8 @@ class CFGenerator {
   private String elaboraCodiceComune() {
   String cc="";
     try {
-      ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
-      URL resource = classLoader.getResource("comuni.txt");
-      File file = new File(resource.getPath());
-      Scanner scanner = new Scanner(file);
+      InputStream in = getClass().getResourceAsStream("/comuni.txt");
+      Scanner scanner = new Scanner(in);//file);
       scanner.useDelimiter("\r\n");
       
       while(scanner.hasNext()) {
