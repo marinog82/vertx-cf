@@ -1,0 +1,85 @@
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Prova il servizio CF</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div>
+        <h1>Vert.x Codice Fiscale</h1>
+        <p class="lead">Usa questa pagina per provare la API di calcolo del codice fiscale 
+        </p>
+
+        <h2>Utilizzo del servizio <b>/api/cf</b></h2>
+<!-- api/cf?cognome=Mondini&nome=Franco&comune=NOVELLARA&m=Aprile&anno=1982&giorno=22&sesso=M -->
+        <form class="form-inline">
+            <div class="form-group">
+                <label for="cognome">Cognome</label>
+                <input type="text" class="form-control" id="cognome" placeholder="Mondini">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" id="nome" placeholder="Franco">
+                <label for="comune">Comune di nascita</label>
+                <input type="text" class="form-control" id="comune" placeholder="Novellara">
+                <label for="giorno">Giorno di nascita</label>
+                <input type="text" class="form-control" id="giorno" placeholder="22">
+                <label for="m">Mese di nascita</label>
+                <input type="text" class="form-control" id="m" placeholder="Aprile">
+                <label for="anno">Anno di nascita</label>
+                <input type="text" class="form-control" id="anno" placeholder="1982">
+                <label for="sesso">Sesso</label>
+                <input type="text" class="form-control" id="sesso" placeholder="M">
+            </div>
+            <button id="invoke" type="submit" class="btn btn-success">Calcola CF</button>
+        </form>
+
+        <h3>CF:</h3>
+        <pre><code id="cf-result">Premi [Calcola CF] per chiamare il servizio e vedere il risultato.</code></pre>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function() {
+        $("#invoke").click(function(e) {
+            var cognome = $("#cognome").val() || "Mondini";
+            var nome = $("#nome").val() || "Franco";
+            var comune = $("#comune").val() || "Novellara";
+            var giorno = $("#giorno").val() || "22";
+            var m = $("#m").val() || "Aprile";
+            var anno = $("#anno").val() || "1982";
+            var sesso = $("#sesso").val() || "M";
+            var url = "/api/cf?"; 
+            url += "cognome="+cognome; 
+            url += "&nome="+nome;
+            url += "&comune="+comune;
+            url += "&m="+m; 
+            url += "&anno="+anno;
+            url += "&giorno="+giorno;
+            url += "&sesso="+m;
+            console.log("api-url:"+url);
+            $.getJSON(url, function(res) {
+                var result = JSON.stringify(res);
+                console.log(result);
+                $("#cf-result").html(result);
+            })
+                .fail(function(jqxhr, textStatus, error) {
+                    $("#cf-result").html("Problemi nel calcolo del codice fiscale, riprova");
+                });
+            e.preventDefault();
+        });
+    });
+</script>
+
+</body>
+
+</html>

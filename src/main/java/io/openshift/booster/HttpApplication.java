@@ -35,7 +35,7 @@ public class HttpApplication extends AbstractVerticle {
         router.get("/api/greeting").handler(this::greeting);
         router.get("/api/cf").handler(this::getCF);
         router.get("/health").handler(rc -> rc.response().end("OK"));
-        router.get("/").handler(StaticHandler.create());
+        router.get("/*").handler(StaticHandler.create()); // .setCachingEnabled(true));
 
         retrieveMessageTemplateFromConfiguration().setHandler(ar -> {
             // Once retrieved, store it and start the HTTP server.
