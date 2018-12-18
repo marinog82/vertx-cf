@@ -65,7 +65,7 @@
             url += "&m="+m; 
             url += "&anno="+anno;
             url += "&giorno="+giorno;
-            url += "&sesso="+m;
+            url += "&sesso="+sesso;
             console.log("api-url:"+url);
             $.getJSON(url, function(res) {
                 var result = JSON.stringify(res);
