@@ -1,0 +1,1270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="bf28a7da-b4ed-46b6-8d2b-d08810e50ca3" activeEnvironment="Default" name="AnagrafeCliente" resourceRoot="" soapui-version="5.3.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="true"/>
+  <con:entry key="Export All" value="true"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="true"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding TestSuite"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="true"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="true"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="aggiornaBandierine TestCase"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value="C:\Program Files\SmartBear\SoapUI-5.3.0\bin"/>
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="true"/>
+  <con:entry key="Root Folder" value="C:\logsoap\result"/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:WsdlInterface" id="9c4f62d5-eb2f-4bd5-af14-a2401b5242f9" wsaVersion="NONE" name="CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding" type="wsdl" bindingName="{http://v1.cliente.anagr.be.xanage.credem.it}CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding" soapVersion="1_1" anonymous="optional" definition="https://vr0cldmckas01.group.credem.net:9443/castlemock/mock/soap/project/dFdsd0/CR_XANAGE_BE_ANAGR_CLIENTE_V1Port?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="https://vr0cldmckas01.group.credem.net:9443/castlemock/mock/soap/project/dFdsd0/CR_XANAGE_BE_ANAGR_CLIENTE_V1Port?wsdl"><con:part><con:url>https://vr0cldmckas01.group.credem.net:9443/castlemock/mock/soap/project/dFdsd0/CR_XANAGE_BE_ANAGR_CLIENTE_V1Port?wsdl</con:url><con:content><![CDATA[<!--File it/credem/xanage/be/anagr/cliente/v1/CR_XANAGE_BE_ANAGR_CLIENTE_V1.wsdl, shared library CR_XANAGE_BE_ANAGR_CLIENTELIB_V1-->
+<wsdl:definitions name="CR_XANAGE_BE_ANAGR_CLIENTE_V1" targetNamespace="http://v1.cliente.anagr.be.xanage.credem.it" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://v1.cliente.anagr.be.xanage.credem.it" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:documentation>
+    <wsdl:appinfo source="WMQI_APPINFO">
+      <MRWSDLAppInfo imported="true">
+        <binding hasEncoding="false" imported="true" name="CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding" originalBindingStyle="document"/>
+        <generatedXSD location="CR_XANAGE_BE_ANAGR_CLIENTE_V1_InlineSchema1.xsd"/>
+      </MRWSDLAppInfo>
+    </wsdl:appinfo>
+  </wsdl:documentation>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://v1.cliente.anagr.be.xanage.credem.it" xmlns:ibmSchExtn="http://www.ibm.com/schema/extensions">
+      <xsd:include schemaLocation="CR_XANAGE_BE_ANAGR_CLIENTE_V1_1_2.xsd"/>
+      <xsd:include schemaLocation="CR_XANAGE_BE_ANAGR_CLIENTE_V1.xsd"/>
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:import namespace="http://v1.cliente.anagr.be.xanage.credem.it" schemaLocation="CR_XANAGE_BE_ANAGR_CLIENTE_V1.xsd"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="verificaMinorenneRequestMsg">
+    <wsdl:part element="tns:verificaMinorenneRequest" name="VerificaMinorenneRequest"/>
+  </wsdl:message>
+  <wsdl:message name="verificaMinorenneResponseMsg">
+    <wsdl:part element="tns:verificaMinorenneResponse" name="VerificaMinorenneResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ricercaIndirizzoRequestMsg">
+    <wsdl:part element="tns:ricercaIndirizzoRequest" name="RicercaIndirizzoRequest"/>
+  </wsdl:message>
+  <wsdl:message name="ricercaIndirizzoResponseMsg">
+    <wsdl:part element="tns:ricercaIndirizzoResponse" name="RicercaIndirizzoResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ricercaCdgRequestMsg">
+    <wsdl:part element="tns:ricercaCdgRequest" name="RicercaCdgRequest"/>
+  </wsdl:message>
+  <wsdl:message name="ricercaCdgResponseMsg">
+    <wsdl:part element="tns:ricercaCdgResponse" name="RicercaCdgResponse"/>
+  </wsdl:message>
+  <wsdl:message name="verificaValiditaDocumentoRequestMsg">
+    <wsdl:part element="tns:verificaValiditaDocumentoRequest" name="VerificaValiditaDocumentoRequest"/>
+  </wsdl:message>
+  <wsdl:message name="verificaValiditaDocumentoResponseMsg">
+    <wsdl:part element="tns:verificaValiditaDocumentoRequest" name="VerificaValiditaDocumentoResponse"/>
+  </wsdl:message>
+  <wsdl:message name="estrazioneInfoCfRequestMsg">
+    <wsdl:part element="tns:estrazioneInfoCfRequest" name="EstrazioneInfoCfRequest"/>
+  </wsdl:message>
+  <wsdl:message name="estrazioneInfoCfResponseMsg">
+    <wsdl:part element="tns:estrazioneInfoCfResponse" name="EstrazioneInfoCfResponse"/>
+  </wsdl:message>
+  <wsdl:message name="inserimentoCdgRequestMsg">
+    <wsdl:part element="tns:inserimentoCdgRequest" name="InserimentoCdgRequest"/>
+  </wsdl:message>
+  <wsdl:message name="inserimentoCdgResponseMsg">
+    <wsdl:part element="tns:inserimentoCdgResponse" name="InserimentoCdgResponse"/>
+  </wsdl:message>
+  <wsdl:message name="cancellazioneConsensiPrivacyRequestMsg">
+    <wsdl:part element="tns:cancellazioneConsensiPrivacyRequest" name="CancellazioneConsensiPrivacyRequest"/>
+  </wsdl:message>
+  <wsdl:message name="cancellazioneConsensiPrivacyResponseMsg">
+    <wsdl:part element="tns:cancellazioneConsensiPrivacyResponse" name="CancellazioneConsensiPrivacyResponse"/>
+  </wsdl:message>
+  <wsdl:message name="trasformazioneExClienteCdgRequestMsg">
+    <wsdl:part element="tns:trasformazioneExClienteCdgRequest" name="TrasformazioneExClienteCdgRequest"/>
+  </wsdl:message>
+  <wsdl:message name="trasformazioneExClienteCdgResponseMsg">
+    <wsdl:part element="tns:trasformazioneExClienteCdgResponse" name="TrasformazioneExClienteCdgResponse"/>
+  </wsdl:message>
+  <wsdl:message name="aggiornamentoConsensiPrivacyRequestMsg">
+    <wsdl:part element="tns:aggiornamentoConsensiPrivacyRequest" name="aggiornamentoConsensiPrivacyRequest"/>
+  </wsdl:message>
+  <wsdl:message name="aggiornamentoConsensiPrivacyResponseMsg">
+    <wsdl:part element="tns:aggiornamentoConsensiPrivacyResponse" name="aggiornamentoConsensiPrivacyResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ricercaTitolistudioRequestMsg">
+    <wsdl:part element="tns:ricercaTitolistudioRequest" name="ricercaTitolistudioRequest"/>
+  </wsdl:message>
+  <wsdl:message name="ricercaTitolistudioResponseMsg">
+    <wsdl:part element="tns:ricercaTitolistudioResponse" name="ricercaTitolistudioResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ricercaProfessioniRequestMsg">
+    <wsdl:part element="tns:ricercaProfessioniRequest" name="ricercaProfessioniRequest"/>
+  </wsdl:message>
+  <wsdl:message name="ricercaProfessioniResponseMsg">
+    <wsdl:part element="tns:ricercaProfessioniResponse" name="ricercaProfessioniResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ricercaAttivitaRequestMsg">
+    <wsdl:part element="tns:ricercaAttivitaRequest" name="ricercaAttivitaRequest"/>
+  </wsdl:message>
+  <wsdl:message name="ricercaAttivitaResponseMsg">
+    <wsdl:part element="tns:ricercaAttivitaResponse" name="ricercaAttivitaResponse"/>
+  </wsdl:message>
+  <wsdl:message name="verificaIndiziResidenzaFiscaleEsteraRequestMsg">
+    <wsdl:part element="tns:verificaIndiziResidenzaFiscaleEsteraRequest" name="verificaIndiziResidenzaFiscaleEsteraRequest"/>
+  </wsdl:message>
+  <wsdl:message name="verificaIndiziResidenzaFiscaleEsteraResponseMsg">
+    <wsdl:part element="tns:verificaIndiziResidenzaFiscaleEsteraResponse" name="verificaIndiziResidenzaFiscaleEsteraResponse"/>
+  </wsdl:message>
+  <wsdl:message name="verificaRecapitielettroniciRequestMsg">
+    <wsdl:part element="tns:verificaRecapitielettroniciRequest" name="verificaRecapitielettroniciRequest"/>
+  </wsdl:message>
+  <wsdl:message name="verificaRecapitielettroniciResponseMsg">
+    <wsdl:part element="tns:verificaRecapitielettroniciResponse" name="verificaRecapitielettroniciResponse"/>
+  </wsdl:message>
+  <wsdl:message name="aggiornamentoCdgRequestMsg">
+    <wsdl:part element="tns:aggiornamentoCdgRequest" name="aggiornamentoCdgRequest"/>
+  </wsdl:message>
+  <wsdl:message name="aggiornamentoCdgResponseMsg">
+    <wsdl:part element="tns:aggiornamentoCdgResponse" name="aggiornamentoCdgResponse"/>
+  </wsdl:message>
+  <wsdl:message name="inserimentoDatiFiscaliRequestMsg">
+    <wsdl:part element="tns:inserimentoDatiFiscaliRequest" name="inserimentoDatiFiscaliRequest"/>
+  </wsdl:message>
+  <wsdl:message name="inserimentoDatiFiscaliResponseMsg">
+    <wsdl:part element="tns:inserimentoDatiFiscaliResponse" name="inserimentoDatiFiscaliResponse"/>
+  </wsdl:message>
+  <wsdl:message name="inserimentoGestoreRequestMsg">
+    <wsdl:part element="tns:inserimentoGestoreRequest" name="inserimentoGestoreRequest"/>
+  </wsdl:message>
+  <wsdl:message name="inserimentoGestoreResponseMsg">
+    <wsdl:part element="tns:inserimentoGestoreResponse" name="inserimentoGestoreResponse"/>
+  </wsdl:message>
+  <wsdl:message name="inserimentoDatiAnagraficiRequestMsg">
+    <wsdl:part element="tns:inserimentoDatiAnagraficiRequest" name="inserimentoDatiAnagraficiRequest"/>
+  </wsdl:message>
+  <wsdl:message name="inserimentoDatiAnagraficiResponseMsg">
+    <wsdl:part element="tns:inserimentoDatiAnagraficiResponse" name="inserimentoDatiAnagraficiResponse"/>
+  </wsdl:message>
+  <wsdl:message name="inserimentoDatiComplementariRequestMsg">
+    <wsdl:part element="tns:inserimentoDatiComplementariRequest" name="inserimentoDatiComplementariRequest"/>
+  </wsdl:message>
+  <wsdl:message name="inserimentoDatiComplementariResponseMsg">
+    <wsdl:part element="tns:inserimentoDatiComplementariResponse" name="inserimentoDatiComplementariResponse"/>
+  </wsdl:message>
+  <wsdl:message name="inserimentoConsensiRequestMsg">
+    <wsdl:part element="tns:inserimentoConsensiRequest" name="InserimentoConsensiRequest"/>
+  </wsdl:message>
+  <wsdl:message name="inserimentoConsensiResponseMsg">
+    <wsdl:part element="tns:inserimentoConsensiResponse" name="InserimentoConsensiResponse"/>
+  </wsdl:message>
+  <wsdl:message name="inserimentoDocumentiRequestMsg">
+    <wsdl:part element="tns:inserimentoDocumentiRequest" name="inserimentoDocumentiRequest"/>
+  </wsdl:message>
+  <wsdl:message name="inserimentoDocumentiResponseMsg">
+    <wsdl:part element="tns:inserimentoDocumentiResponse" name="inserimentoDocumentiResponse"/>
+  </wsdl:message>
+  <wsdl:message name="inserimentoAttivitaRequestMsg">
+    <wsdl:part element="tns:inserimentoAttivitaRequest" name="inserimentoAttivitaRequest"/>
+  </wsdl:message>
+  <wsdl:message name="inserimentoAttivitaResponseMsg">
+    <wsdl:part element="tns:inserimentoAttivitaResponse" name="inserimentoAttivitaResponse"/>
+  </wsdl:message>
+  <wsdl:message name="inserimentoRecapitiPostaliRequestMsg">
+    <wsdl:part element="tns:inserimentoRecapitiPostaliRequest" name="inserimentoRecapitiPostaliRequest"/>
+  </wsdl:message>
+  <wsdl:message name="inserimentoRecapitiPostaliResponseMsg">
+    <wsdl:part element="tns:inserimentoRecapitiPostaliResponse" name="inserimentoRecapitiPostaliResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ricercaPortafoglioRequestMsg">
+    <wsdl:part element="tns:ricercaPortafoglioRequest" name="ricercaPortafoglioRequest"/>
+  </wsdl:message>
+  <wsdl:message name="ricercaPortafoglioResponseMsg">
+    <wsdl:part element="tns:ricercaPortafoglioResponse" name="ricercaPortafoglioResponse"/>
+  </wsdl:message>
+  <wsdl:message name="aggiornamentoClienteRiconosciutoRequestMsg">
+    <wsdl:part element="tns:aggiornamentoClienteRiconosciutoRequest" name="aggiornamentoClienteRiconosciutoRequest"/>
+  </wsdl:message>
+  <wsdl:message name="aggiornamentoClienteRiconosciutoResponseMsg">
+    <wsdl:part element="tns:aggiornamentoClienteRiconosciutoResponse" name="aggiornamentoClienteRiconosciutoResponse"/>
+  </wsdl:message>
+  <wsdl:message name="recuperaDatiIdentificativiRequestMsg">
+    <wsdl:part element="tns:recuperaDatiIdentificativiRequest" name="recuperaDatiIdentificativiRequest"/>
+  </wsdl:message>
+  <wsdl:message name="recuperaDatiIdentificativiResponseMsg">
+    <wsdl:part element="tns:recuperaDatiIdentificativiResponse" name="recuperaDatiIdentificativiResponse"/>
+  </wsdl:message>
+  <wsdl:message name="recuperaConsensiPrivacyRequestMsg">
+    <wsdl:part element="tns:recuperaConsensiPrivacyRequest" name="recuperaConsensiPrivacyRequest"/>
+  </wsdl:message>
+  <wsdl:message name="recuperaConsensiPrivacyResponseMsg">
+    <wsdl:part element="tns:recuperaConsensiPrivacyResponse" name="recuperaConsensiPrivacyResponse"/>
+  </wsdl:message>
+  <wsdl:message name="recuperaAttivitaRisultatiRischiositaRequestMsg">
+    <wsdl:part element="tns:recuperaAttivitaRisultatiRischiositaRequest" name="recuperaAttivitaRisultatiRischiositaRequest"/>
+  </wsdl:message>
+  <wsdl:message name="recuperaAttivitaRisultatiRischiositaResponseMsg">
+    <wsdl:part element="tns:recuperaAttivitaRisultatiRischiositaResponse" name="recuperaAttivitaRisultatiRischiositaResponse"/>
+  </wsdl:message>
+  <wsdl:message name="recuperaDatiComplementariRequestMsg">
+    <wsdl:part element="tns:recuperaDatiComplementariRequest" name="recuperaDatiComplementariRequest"/>
+  </wsdl:message>
+  <wsdl:message name="recuperaDatiComplementariResponseMsg">
+    <wsdl:part element="tns:recuperaDatiComplementariResponse" name="recuperaDatiComplementariResponse"/>
+  </wsdl:message>
+  <wsdl:message name="recuperaDocumentoRiconoscimentoRequestMsg">
+    <wsdl:part element="tns:recuperaDocumentoRiconoscimentoRequest" name="recuperaDocumentoRiconoscimentoRequest"/>
+  </wsdl:message>
+  <wsdl:message name="recuperaDocumentoRiconoscimentoResponseMsg">
+    <wsdl:part element="tns:recuperaDocumentoRiconoscimentoResponse" name="recuperaDocumentoRiconoscimentoResponse"/>
+  </wsdl:message>
+  <wsdl:message name="recuperaDatiFiscaliRequestMsg">
+    <wsdl:part element="tns:recuperaDatiFiscaliRequest" name="recuperaDatiFiscaliRequest"/>
+  </wsdl:message>
+  <wsdl:message name="recuperaDatiFiscaliResponseMsg">
+    <wsdl:part element="tns:recuperaDatiFiscaliResponse" name="recuperaDatiFiscaliResponse"/>
+  </wsdl:message>
+  <wsdl:message name="recuperaAltriDatiIdentificativiRequestMsg">
+    <wsdl:part element="tns:recuperaAltriDatiIdentificativiRequest" name="recuperaAltriDatiIdentificativiRequest"/>
+  </wsdl:message>
+  <wsdl:message name="recuperaAltriDatiIdentificativiResponseMsg">
+    <wsdl:part element="tns:recuperaAltriDatiIdentificativiResponse" name="recuperaAltriDatiIdentificativiResponse"/>
+  </wsdl:message>
+  <wsdl:message name="recuperaRuoliRequestMsg">
+    <wsdl:part element="tns:recuperaRuoliRequest" name="recuperaRuoliRequest"/>
+  </wsdl:message>
+  <wsdl:message name="recuperaRuoliResponseMsg">
+    <wsdl:part element="tns:recuperaRuoliResponse" name="recuperaRuoliResponse"/>
+  </wsdl:message>
+  <wsdl:message name="recuperaCollegamentiRequestMsg">
+    <wsdl:part element="tns:recuperaCollegamentiRequest" name="recuperaCollegamentiRequest"/>
+  </wsdl:message>
+  <wsdl:message name="recuperaCollegamentiResponseMsg">
+    <wsdl:part element="tns:recuperaCollegamentiResponse" name="recuperaCollegamentiResponse"/>
+  </wsdl:message>
+  <wsdl:message name="verificaValiditaDocumentoRiconoscimentoRequestMsg">
+    <wsdl:part element="tns:verificaValiditaDocumentoRiconoscimentoRequest" name="verificaValiditaDocumentoRiconoscimentoRequest"/>
+  </wsdl:message>
+  <wsdl:message name="verificaValiditaDocumentoRiconoscimentoResponseMsg">
+    <wsdl:part element="tns:verificaValiditaDocumentoRiconoscimentoResponse" name="verificaValiditaDocumentoRiconoscimentoResponse"/>
+  </wsdl:message>
+  <wsdl:message name="verificaCompletezzaDatiAnagraficiRequestMsg">
+    <wsdl:part element="tns:verificaCompletezzaDatiAnagraficiRequest" name="verificaCompletezzaDatiAnagraficiRequest"/>
+  </wsdl:message>
+  <wsdl:message name="verificaCompletezzaDatiAnagraficiResponseMsg">
+    <wsdl:part element="tns:verificaCompletezzaDatiAnagraficiResponse" name="verificaCompletezzaDatiAnagraficiResponse"/>
+  </wsdl:message>
+  <wsdl:message name="recuperaBandierineRequestMsg">
+    <wsdl:part element="tns:recuperaBandierineRequest" name="recuperaBandierineRequest"/>
+  </wsdl:message>
+  <wsdl:message name="recuperaBandierineResponseMsg">
+    <wsdl:part element="tns:recuperaBandierineResponse" name="recuperaBandierineResponse"/>
+  </wsdl:message>
+  <wsdl:message name="aggiornaBandierineRequestMsg">
+    <wsdl:part element="tns:aggiornaBandierineRequest" name="aggiornaBandierineRequest"/>
+  </wsdl:message>
+  <wsdl:message name="aggiornaBandierineResponseMsg">
+    <wsdl:part element="tns:aggiornaBandierineResponse" name="aggiornaBandierineResponse"/>
+  </wsdl:message>
+  <wsdl:message name="annulloPraticheAnagraficheBPMRequestMsg">
+    <wsdl:part element="tns:annulloPraticheAnagraficheBPMRequest" name="annulloPraticheAnagraficheBPMRequest"/>
+  </wsdl:message>
+  <wsdl:message name="annulloPraticheAnagraficheBPMResponseMsg">
+    <wsdl:part element="tns:annulloPraticheAnagraficheBPMResponse" name="annulloPraticheAnagraficheBPMResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="CR_XANAGE_BE_ANAGR_CLIENTE_V1PortType">
+    <wsdl:operation name="aggiornamentoCdg">
+      <wsdl:input message="tns:aggiornamentoCdgRequestMsg" name="aggiornamentoCdgRequest"/>
+      <wsdl:output message="tns:aggiornamentoCdgResponseMsg" name="aggiornamentoCdgResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="aggiornamentoConsensiPrivacy">
+      <wsdl:input message="tns:aggiornamentoConsensiPrivacyRequestMsg" name="aggiornamentoConsensiPrivacyRequest"/>
+      <wsdl:output message="tns:aggiornamentoConsensiPrivacyResponseMsg" name="aggiornamentoConsensiPrivacyResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="cancellazioneConsensiPrivacy">
+      <wsdl:input message="tns:cancellazioneConsensiPrivacyRequestMsg" name="CancellazioneConsensiPrivacyRequest"/>
+      <wsdl:output message="tns:cancellazioneConsensiPrivacyResponseMsg" name="CancellazioneConsensiPrivacyResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="estrazioneInfoCf">
+      <wsdl:input message="tns:estrazioneInfoCfRequestMsg" name="EstrazioneInfoCfRequest"/>
+      <wsdl:output message="tns:estrazioneInfoCfResponseMsg" name="EstrazioneInfoCfResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="inserimentoCdg">
+      <wsdl:input message="tns:inserimentoCdgRequestMsg" name="InserimentoCdgRequest"/>
+      <wsdl:output message="tns:inserimentoCdgResponseMsg" name="InserimentoCdgResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="ricercaCdg">
+      <wsdl:input message="tns:ricercaCdgRequestMsg" name="RicercaCdgRequest"/>
+      <wsdl:output message="tns:ricercaCdgResponseMsg" name="RicercaCdgResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="ricercaIndirizzo">
+      <wsdl:input message="tns:ricercaIndirizzoRequestMsg" name="RicercaIndirizzoRequest"/>
+      <wsdl:output message="tns:ricercaIndirizzoResponseMsg" name="RicercaIndirizzoResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="trasformazioneExClienteCdg">
+      <wsdl:input message="tns:trasformazioneExClienteCdgRequestMsg" name="TrasformazioneExClienteCdgRequest"/>
+      <wsdl:output message="tns:trasformazioneExClienteCdgResponseMsg" name="TrasformazioneExClienteCdgResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="verificaMinorenne">
+      <wsdl:input message="tns:verificaMinorenneRequestMsg" name="VerificaMinorenneRequest"/>
+      <wsdl:output message="tns:verificaMinorenneResponseMsg" name="VerificaMinorenneResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="verificaValiditaDocumento">
+      <wsdl:input message="tns:verificaValiditaDocumentoRequestMsg" name="VerificaValiditaDocumentoRequest"/>
+      <wsdl:output message="tns:verificaValiditaDocumentoResponseMsg" name="VerificaValiditaDocumentoResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="ricercaTitolistudio">
+      <wsdl:input message="tns:ricercaTitolistudioRequestMsg" name="ricercaTitolistudioRequest"/>
+      <wsdl:output message="tns:ricercaTitolistudioResponseMsg" name="ricercaTitolistudioResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="ricercaProfessioni">
+      <wsdl:input message="tns:ricercaProfessioniRequestMsg" name="ricercaProfessioniRequest"/>
+      <wsdl:output message="tns:ricercaProfessioniResponseMsg" name="ricercaProfessioniResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="ricercaAttivita">
+      <wsdl:input message="tns:ricercaAttivitaRequestMsg" name="ricercaAttivitaRequest"/>
+      <wsdl:output message="tns:ricercaAttivitaResponseMsg" name="ricercaAttivitaResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="verificaIndiziResidenzaFiscaleEstera">
+      <wsdl:input message="tns:verificaIndiziResidenzaFiscaleEsteraRequestMsg" name="verificaIndiziResidenzaFiscaleEsteraRequest"/>
+      <wsdl:output message="tns:verificaIndiziResidenzaFiscaleEsteraResponseMsg" name="verificaIndiziResidenzaFiscaleEsteraResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="verificaRecapitielettronici">
+      <wsdl:input message="tns:verificaRecapitielettroniciRequestMsg" name="verificaRecapitielettroniciRequest"/>
+      <wsdl:output message="tns:verificaRecapitielettroniciResponseMsg" name="verificaRecapitielettroniciResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="inserimentoDatiFiscali">
+      <wsdl:input message="tns:inserimentoDatiFiscaliRequestMsg" name="inserimentoDatiFiscaliRequest"/>
+      <wsdl:output message="tns:inserimentoDatiFiscaliResponseMsg" name="inserimentoDatiFiscaliResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="inserimentoGestore">
+      <wsdl:input message="tns:inserimentoGestoreRequestMsg" name="inserimentoGestoreRequest"/>
+      <wsdl:output message="tns:inserimentoGestoreResponseMsg" name="inserimentoGestoreResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="inserimentoDatiAnagrafici">
+      <wsdl:input message="tns:inserimentoDatiAnagraficiRequestMsg" name="inserimentoDatiAnagraficiRequest"/>
+      <wsdl:output message="tns:inserimentoDatiAnagraficiResponseMsg" name="inserimentoDatiAnagraficiResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="inserimentoDatiComplementari">
+      <wsdl:input message="tns:inserimentoDatiComplementariRequestMsg" name="inserimentoDatiComplementariRequest"/>
+      <wsdl:output message="tns:inserimentoDatiComplementariResponseMsg" name="inserimentoDatiComplementariResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="inserimentoConsensi">
+      <wsdl:input message="tns:inserimentoConsensiRequestMsg" name="inserimentoConsensiRequest"/>
+      <wsdl:output message="tns:inserimentoConsensiResponseMsg" name="inserimentoConsensiResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="inserimentoDocumenti">
+      <wsdl:input message="tns:inserimentoDocumentiRequestMsg" name="inserimentoDocumentiRequest"/>
+      <wsdl:output message="tns:inserimentoDocumentiResponseMsg" name="inserimentoDocumentiResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="inserimentoAttivita">
+      <wsdl:input message="tns:inserimentoAttivitaRequestMsg" name="inserimentoAttivitaRequest"/>
+      <wsdl:output message="tns:inserimentoAttivitaResponseMsg" name="inserimentoAttivitaResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="inserimentoRecapitiPostali">
+      <wsdl:input message="tns:inserimentoRecapitiPostaliRequestMsg" name="inserimentoRecapitiPostaliRequest"/>
+      <wsdl:output message="tns:inserimentoRecapitiPostaliResponseMsg" name="inserimentoRecapitiPostaliResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="ricercaPortafoglio">
+      <wsdl:input message="tns:ricercaPortafoglioRequestMsg" name="ricercaPortafoglioRequest"/>
+      <wsdl:output message="tns:ricercaPortafoglioResponseMsg" name="ricercaPortafoglioResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="aggiornamentoClienteRiconosciuto">
+      <wsdl:input message="tns:aggiornamentoClienteRiconosciutoRequestMsg" name="aggiornamentoClienteRiconosciutoRequest"/>
+      <wsdl:output message="tns:aggiornamentoClienteRiconosciutoResponseMsg" name="aggiornamentoClienteRiconosciutoResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="recuperaDatiIdentificativi">
+      <wsdl:input message="tns:recuperaDatiIdentificativiRequestMsg" name="recuperaDatiIdentificativiRequest"/>
+      <wsdl:output message="tns:recuperaDatiIdentificativiResponseMsg" name="recuperaDatiIdentificativiResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="recuperaConsensiPrivacy">
+      <wsdl:input message="tns:recuperaConsensiPrivacyRequestMsg" name="recuperaConsensiPrivacyRequest"/>
+      <wsdl:output message="tns:recuperaConsensiPrivacyResponseMsg" name="recuperaConsensiPrivacyResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="recuperaAttivitaRisultatiRischiosita">
+      <wsdl:input message="tns:recuperaAttivitaRisultatiRischiositaRequestMsg" name="recuperaAttivitaRisultatiRischiositaRequest"/>
+      <wsdl:output message="tns:recuperaAttivitaRisultatiRischiositaResponseMsg" name="recuperaAttivitaRisultatiRischiositaResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="recuperaDatiComplementari">
+      <wsdl:input message="tns:recuperaDatiComplementariRequestMsg" name="recuperaDatiComplementariRequest"/>
+      <wsdl:output message="tns:recuperaDatiComplementariResponseMsg" name="recuperaDatiComplementariResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="recuperaDocumentoRiconoscimento">
+      <wsdl:input message="tns:recuperaDocumentoRiconoscimentoRequestMsg" name="recuperaDocumentoRiconoscimentoRequest"/>
+      <wsdl:output message="tns:recuperaDocumentoRiconoscimentoResponseMsg" name="recuperaDocumentoRiconoscimentoResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="recuperaDatiFiscali">
+      <wsdl:input message="tns:recuperaDatiFiscaliRequestMsg" name="recuperaDatiFiscaliRequest"/>
+      <wsdl:output message="tns:recuperaDatiFiscaliResponseMsg" name="recuperaDatiFiscaliResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="recuperaAltriDatiIdentificativi">
+      <wsdl:input message="tns:recuperaAltriDatiIdentificativiRequestMsg" name="recuperaAltriDatiIdentificativiRequest"/>
+      <wsdl:output message="tns:recuperaAltriDatiIdentificativiResponseMsg" name="recuperaAltriDatiIdentificativiResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="recuperaRuoli">
+      <wsdl:input message="tns:recuperaRuoliRequestMsg" name="recuperaRuoliRequest"/>
+      <wsdl:output message="tns:recuperaRuoliResponseMsg" name="recuperaRuoliResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="recuperaCollegamenti">
+      <wsdl:input message="tns:recuperaCollegamentiRequestMsg" name="recuperaCollegamentiRequest"/>
+      <wsdl:output message="tns:recuperaCollegamentiResponseMsg" name="recuperaCollegamentiResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="verificaValiditaDocumentoRiconoscimento">
+      <wsdl:input message="tns:verificaValiditaDocumentoRiconoscimentoRequestMsg" name="verificaValiditaDocumentoRiconoscimentoRequest"/>
+      <wsdl:output message="tns:verificaValiditaDocumentoRiconoscimentoResponseMsg" name="verificaValiditaDocumentoRiconoscimentoResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="verificaCompletezzaDatiAnagrafici">
+      <wsdl:input message="tns:verificaCompletezzaDatiAnagraficiRequestMsg" name="verificaCompletezzaDatiAnagraficiRequest"/>
+      <wsdl:output message="tns:verificaCompletezzaDatiAnagraficiResponseMsg" name="verificaCompletezzaDatiAnagraficiResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="recuperaBandierine">
+      <wsdl:input message="tns:recuperaBandierineRequestMsg" name="recuperaBandierineRequest"/>
+      <wsdl:output message="tns:recuperaBandierineResponseMsg" name="recuperaBandierineResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="aggiornaBandierine">
+      <wsdl:input message="tns:aggiornaBandierineRequestMsg" name="aggiornaBandierineRequest"/>
+      <wsdl:output message="tns:aggiornaBandierineResponseMsg" name="aggiornaBandierineResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="annulloPraticheAnagraficheBPM">
+      <wsdl:input message="tns:annulloPraticheAnagraficheBPMRequestMsg" name="annulloPraticheAnagraficheBPMRequest"/>
+      <wsdl:output message="tns:annulloPraticheAnagraficheBPMResponseMsg" name="annulloPraticheAnagraficheBPMResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding" type="tns:CR_XANAGE_BE_ANAGR_CLIENTE_V1PortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="verificaMinorenne">
+      <soap:operation soapAction="http://v1.cliente.anagr.be.xanage.credem.it/verificaMinorenne"/>
+      <wsdl:input name="VerificaMinorenneRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="VerificaMinorenneResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ricercaIndirizzo">
+      <soap:operation soapAction="http://v1.cliente.anagr.be.xanage.credem.it/ricercaIndirizzo"/>
+      <wsdl:input name="RicercaIndirizzoRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="RicercaIndirizzoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ricercaCdg">
+      <soap:operation soapAction="http://v1.cliente.anagr.be.xanage.credem.it/ricercaCdg"/>
+      <wsdl:input name="RicercaCdgRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="RicercaCdgResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verificaValiditaDocumento">
+      <soap:operation soapAction="http://v1.cliente.anagr.be.xanage.credem.it/verificaValiditaDocumento"/>
+      <wsdl:input name="VerificaValiditaDocumentoRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="VerificaValiditaDocumentoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="estrazioneInfoCf">
+      <soap:operation soapAction="http://v1.cliente.anagr.be.xanage.credem.it/estrazioneInfoCf"/>
+      <wsdl:input name="EstrazioneInfoCfRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="EstrazioneInfoCfResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="inserimentoCdg">
+      <soap:operation soapAction="http://v1.cliente.anagr.be.xanage.credem.it/inserimentoCdg"/>
+      <wsdl:input name="InserimentoCdgRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="InserimentoCdgResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cancellazioneConsensiPrivacy">
+      <soap:operation soapAction="http://v1.cliente.anagr.be.xanage.credem.it/cancellazioneConsensiPrivacy"/>
+      <wsdl:input name="CancellazioneConsensiPrivacyRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="CancellazioneConsensiPrivacyResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="trasformazioneExClienteCdg">
+      <soap:operation soapAction="http://v1.cliente.anagr.be.xanage.credem.it/trasformazioneExClienteCdg"/>
+      <wsdl:input name="TrasformazioneExClienteCdgRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="TrasformazioneExClienteCdgResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="aggiornamentoConsensiPrivacy">
+      <soap:operation soapAction="http://v1.cliente.anagr.be.xanage.credem.it/aggiornamentoConsensiPrivacy"/>
+      <wsdl:input name="aggiornamentoConsensiPrivacyRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="aggiornamentoConsensiPrivacyResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ricercaTitolistudio">
+      <soap:operation soapAction="http://v1.cliente.anagr.be.xanage.credem.it/ricercaTitolistudio"/>
+      <wsdl:input name="ricercaTitolistudioRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="ricercaTitolistudioResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ricercaProfessioni">
+      <soap:operation soapAction="http://v1.cliente.anagr.be.xanage.credem.it/ricercaProfessioni"/>
+      <wsdl:input name="ricercaProfessioniRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="ricercaProfessioniResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ricercaAttivita">
+      <soap:operation soapAction="http://v1.cliente.anagr.be.xanage.credem.it/ricercaAttivita"/>
+      <wsdl:input name="ricercaAttivitaRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="ricercaAttivitaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verificaIndiziResidenzaFiscaleEstera">
+      <soap:operation soapAction="http://v1.cliente.anagr.be.xanage.credem.it/verificaIndiziResidenzaFiscaleEstera"/>
+      <wsdl:input name="verificaIndiziResidenzaFiscaleEsteraRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="verificaIndiziResidenzaFiscaleEsteraResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verificaRecapitielettronici">
+      <soap:operation soapAction="http://v1.cliente.anagr.be.xanage.credem.it/verificaRecapitielettronici"/>
+      <wsdl:input name="verificaRecapitielettroniciRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="verificaRecapitielettroniciResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="aggiornamentoCdg">
+      <soap:operation soapAction="http://v1.cliente.anagr.be.xanage.credem.it/aggiornamentoCdg"/>
+      <wsdl:input name="aggiornamentoCdgRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="aggiornamentoCdgResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="inserimentoDatiFiscali">
+      <soap:operation soapAction="http://v1.cliente.anagr.be.xanage.credem.it/inserimentoDatiFiscali"/>
+      <wsdl:input name="inserimentoDatiFiscaliRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="inserimentoDatiFiscaliResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="inserimentoGestore">
+      <soap:operation soapAction="http://v1.cliente.anagr.be.xanage.credem.it/inserimentoGestore"/>
+      <wsdl:input name="inserimentoGestoreRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="inserimentoGestoreResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="inserimentoDatiAnagrafici">
+      <soap:operation soapAction="http://v1.cliente.anagr.be.xanage.credem.it/inserimentoDatiAnagrafici"/>
+      <wsdl:input name="inserimentoDatiAnagraficiRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="inserimentoDatiAnagraficiResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="inserimentoDatiComplementari">
+      <soap:operation soapAction="http://v1.cliente.anagr.be.xanage.credem.it/inserimentoDatiComplementari"/>
+      <wsdl:input name="inserimentoDatiComplementariRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="inserimentoDatiComplementariResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="inserimentoConsensi">
+      <soap:operation soapAction="http://v1.cliente.anagr.be.xanage.credem.it/inserimentoConsensi"/>
+      <wsdl:input name="inserimentoConsensiRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="inserimentoConsensiResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="inserimentoDocumenti">
+      <soap:operation soapAction="http://v1.cliente.anagr.be.xanage.credem.it/inserimentoDocumenti"/>
+      <wsdl:input name="inserimentoDocumentiRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="inserimentoDocumentiResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="inserimentoAttivita">
+      <soap:operation soapAction="http://v1.cliente.anagr.be.xanage.credem.it/inserimentoAttivita"/>
+      <wsdl:input name="inserimentoAttivitaRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="inserimentoAttivitaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="inserimentoRecapitiPostali">
+      <soap:operation soapAction="http://v1.cliente.anagr.be.xanage.credem.it/inserimentoRecapitiPostali"/>
+      <wsdl:input name="inserimentoRecapitiPostaliRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="inserimentoRecapitiPostaliResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ricercaPortafoglio">
+      <soap:operation soapAction="http://v1.cliente.anagr.be.xanage.credem.it/ricercaPortafoglio"/>
+      <wsdl:input name="ricercaPortafoglioRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="ricercaPortafoglioResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="aggiornamentoClienteRiconosciuto">
+      <soap:operation soapAction="http://v1.cliente.anagr.be.xanage.credem.it/aggiornamentoClienteRiconosciuto"/>
+      <wsdl:input name="aggiornamentoClienteRiconosciutoRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="aggiornamentoClienteRiconosciutoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="recuperaDatiIdentificativi">
+      <soap:operation soapAction="http://v1.cliente.anagr.be.xanage.credem.it/recuperaDatiIdentificativi"/>
+      <wsdl:input name="recuperaDatiIdentificativiRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="recuperaDatiIdentificativiResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="recuperaConsensiPrivacy">
+      <soap:operation soapAction="http://v1.cliente.anagr.be.xanage.credem.it/recuperaConsensiPrivacy"/>
+      <wsdl:input name="recuperaConsensiPrivacyRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="recuperaConsensiPrivacyResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="recuperaAttivitaRisultatiRischiosita">
+      <soap:operation soapAction="http://v1.cliente.anagr.be.xanage.credem.it/recuperaAttivitaRisultatiRischiosita"/>
+      <wsdl:input name="recuperaAttivitaRisultatiRischiositaRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="recuperaAttivitaRisultatiRischiositaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="recuperaDatiComplementari">
+      <soap:operation soapAction="http://v1.cliente.anagr.be.xanage.credem.it/recuperaDatiComplementari"/>
+      <wsdl:input name="recuperaDatiComplementariRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="recuperaDatiComplementariResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="recuperaDocumentoRiconoscimento">
+      <soap:operation soapAction="http://v1.cliente.anagr.be.xanage.credem.it/recuperaDocumentoRiconoscimento"/>
+      <wsdl:input name="recuperaDocumentoRiconoscimentoRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="recuperaDocumentoRiconoscimentoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="recuperaDatiFiscali">
+      <soap:operation soapAction="http://v1.cliente.anagr.be.xanage.credem.it/recuperaDatiFiscali"/>
+      <wsdl:input name="recuperaDatiFiscaliRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="recuperaDatiFiscaliResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="recuperaAltriDatiIdentificativi">
+      <soap:operation soapAction="http://v1.cliente.anagr.be.xanage.credem.it/recuperaAltriDatiIdentificativi"/>
+      <wsdl:input name="recuperaAltriDatiIdentificativiRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="recuperaAltriDatiIdentificativiResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="recuperaRuoli">
+      <soap:operation soapAction="http://v1.cliente.anagr.be.xanage.credem.it/recuperaRuoli"/>
+      <wsdl:input name="recuperaRuoliRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="recuperaRuoliResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="recuperaCollegamenti">
+      <soap:operation soapAction="http://v1.cliente.anagr.be.xanage.credem.it/recuperaCollegamenti"/>
+      <wsdl:input name="recuperaCollegamentiRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="recuperaCollegamentiResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verificaValiditaDocumentoRiconoscimento">
+      <soap:operation soapAction="http://v1.cliente.anagr.be.xanage.credem.it/verificaValiditaDocumentoRiconoscimento"/>
+      <wsdl:input name="verificaValiditaDocumentoRiconoscimentoRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="verificaValiditaDocumentoRiconoscimentoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verificaCompletezzaDatiAnagrafici">
+      <soap:operation soapAction="http://v1.cliente.anagr.be.xanage.credem.it/verificaCompletezzaDatiAnagrafici"/>
+      <wsdl:input name="verificaCompletezzaDatiAnagraficiRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="verificaCompletezzaDatiAnagraficiResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="recuperaBandierine">
+      <soap:operation soapAction="http://v1.cliente.anagr.be.xanage.credem.it/recuperaBandierine"/>
+      <wsdl:input name="recuperaBandierineRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="recuperaBandierineResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="aggiornaBandierine">
+      <soap:operation soapAction="http://v1.cliente.anagr.be.xanage.credem.it/aggiornaBandierine"/>
+      <wsdl:input name="aggiornaBandierineRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="aggiornaBandierineResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="annulloPraticheAnagraficheBPM">
+      <soap:operation soapAction="http://v1.cliente.anagr.be.xanage.credem.it/annulloPraticheAnagraficheBPM"/>
+      <wsdl:input name="annulloPraticheAnagraficheBPMRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="annulloPraticheAnagraficheBPMResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CR_XANAGE_BE_ANAGR_CLIENTE_V1">
+    <wsdl:port binding="tns:CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding" name="CR_XANAGE_BE_ANAGR_CLIENTE_V1Port">
+      <soap:address location="https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>https://vr0cldmckas01.group.credem.net:9443/castlemock/mock/soap/project/dFdsd0/CR_XANAGE_BE_ANAGR_CLIENTE_V1.xsd</con:url><con:content>&lt;error-response>
+  &lt;error-message>Unable to parse incoming message&lt;/error-message>
+&lt;/error-response></con:content><con:type/></con:part><con:part><con:url>https://vr0cldmckas01.group.credem.net:9443/castlemock/mock/soap/project/dFdsd0/CR_XANAGE_BE_ANAGR_CLIENTE_V1_1_2.xsd</con:url><con:content>&lt;error-response>
+  &lt;error-message>Unable to parse incoming message&lt;/error-message>
+&lt;/error-response></con:content><con:type/></con:part></con:definitionCache><con:endpoints><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint></con:endpoints><con:operation id="a3fb342b-0adc-46d6-ad86-b96878ebf8fa" isOneWay="false" action="http://v1.cliente.anagr.be.xanage.credem.it/aggiornaBandierine" name="aggiornaBandierine" bindingOperationName="aggiornaBandierine" type="Request-Response" outputName="aggiornaBandierineResponse" inputName="aggiornaBandierineRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="009f9a99-a871-4c9a-9571-910389b47a7d" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:aggiornaBandierineRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.cliente.anagr.be.xanage.credem.it/aggiornaBandierine"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="2cfd5e67-33ae-4d80-ae56-be40fc7206d8" isOneWay="false" action="http://v1.cliente.anagr.be.xanage.credem.it/aggiornamentoCdg" name="aggiornamentoCdg" bindingOperationName="aggiornamentoCdg" type="Request-Response" outputName="aggiornamentoCdgResponse" inputName="aggiornamentoCdgRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="5473dd44-5983-4f29-931b-95f304026a99" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:aggiornamentoCdgRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.cliente.anagr.be.xanage.credem.it/aggiornamentoCdg"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="a6a6f0aa-be37-41d9-9c6b-51f1bf0ce909" isOneWay="false" action="http://v1.cliente.anagr.be.xanage.credem.it/aggiornamentoClienteRiconosciuto" name="aggiornamentoClienteRiconosciuto" bindingOperationName="aggiornamentoClienteRiconosciuto" type="Request-Response" outputName="aggiornamentoClienteRiconosciutoResponse" inputName="aggiornamentoClienteRiconosciutoRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="77f55c57-7f0a-4121-be5e-cb76cf45e07a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:aggiornamentoClienteRiconosciutoRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.cliente.anagr.be.xanage.credem.it/aggiornamentoClienteRiconosciuto"/></con:call></con:operation><con:operation id="0074198f-4262-4a73-ab62-0e52a483b6f2" isOneWay="false" action="http://v1.cliente.anagr.be.xanage.credem.it/aggiornamentoConsensiPrivacy" name="aggiornamentoConsensiPrivacy" bindingOperationName="aggiornamentoConsensiPrivacy" type="Request-Response" outputName="aggiornamentoConsensiPrivacyResponse" inputName="aggiornamentoConsensiPrivacyRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="cd7be0e4-918d-437b-936f-94c14314a155" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:aggiornamentoConsensiPrivacyRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.cliente.anagr.be.xanage.credem.it/aggiornamentoConsensiPrivacy"/></con:call></con:operation><con:operation id="23ee286e-99ee-4543-b1c3-205f610fa8ed" isOneWay="false" action="http://v1.cliente.anagr.be.xanage.credem.it/annulloPraticheAnagraficheBPM" name="annulloPraticheAnagraficheBPM" bindingOperationName="annulloPraticheAnagraficheBPM" type="Request-Response" outputName="annulloPraticheAnagraficheBPMResponse" inputName="annulloPraticheAnagraficheBPMRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="1f961951-c434-41d2-b622-ec9223ebf864" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:annulloPraticheAnagraficheBPMRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.cliente.anagr.be.xanage.credem.it/annulloPraticheAnagraficheBPM"/></con:call></con:operation><con:operation id="201959d1-0ba7-400a-b1d4-d3153c7eea14" isOneWay="false" action="http://v1.cliente.anagr.be.xanage.credem.it/cancellazioneConsensiPrivacy" name="cancellazioneConsensiPrivacy" bindingOperationName="cancellazioneConsensiPrivacy" type="Request-Response" outputName="CancellazioneConsensiPrivacyResponse" inputName="CancellazioneConsensiPrivacyRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a95add37-49c7-4e6f-ba7f-d91416566a77" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:cancellazioneConsensiPrivacyRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.cliente.anagr.be.xanage.credem.it/cancellazioneConsensiPrivacy"/></con:call></con:operation><con:operation id="92acadf0-755e-4352-8a3a-3945a92defb5" isOneWay="false" action="http://v1.cliente.anagr.be.xanage.credem.it/estrazioneInfoCf" name="estrazioneInfoCf" bindingOperationName="estrazioneInfoCf" type="Request-Response" outputName="EstrazioneInfoCfResponse" inputName="EstrazioneInfoCfRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ff4b32dd-df99-4d21-9734-ca36e2491b17" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:estrazioneInfoCfRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.cliente.anagr.be.xanage.credem.it/estrazioneInfoCf"/></con:call></con:operation><con:operation id="56603cab-d857-4bd4-92b9-fc233508d117" isOneWay="false" action="http://v1.cliente.anagr.be.xanage.credem.it/inserimentoAttivita" name="inserimentoAttivita" bindingOperationName="inserimentoAttivita" type="Request-Response" outputName="inserimentoAttivitaResponse" inputName="inserimentoAttivitaRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="5a1f35b8-bc25-4240-ae72-b58f68398b60" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:inserimentoAttivitaRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.cliente.anagr.be.xanage.credem.it/inserimentoAttivita"/></con:call></con:operation><con:operation id="7d3df275-32b9-45cd-b9cd-1294223bcad7" isOneWay="false" action="http://v1.cliente.anagr.be.xanage.credem.it/inserimentoCdg" name="inserimentoCdg" bindingOperationName="inserimentoCdg" type="Request-Response" outputName="InserimentoCdgResponse" inputName="InserimentoCdgRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="5dd39ca3-ab0a-4d66-832b-74bd48ae802c" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:inserimentoCdgRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.cliente.anagr.be.xanage.credem.it/inserimentoCdg"/></con:call></con:operation><con:operation id="b1245fb3-ccec-41b9-b59c-4d3711efc59b" isOneWay="false" action="http://v1.cliente.anagr.be.xanage.credem.it/inserimentoConsensi" name="inserimentoConsensi" bindingOperationName="inserimentoConsensi" type="Request-Response" outputName="inserimentoConsensiResponse" inputName="inserimentoConsensiRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e1a92436-2140-4773-9f6d-44d4b6a1990b" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:inserimentoConsensiRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.cliente.anagr.be.xanage.credem.it/inserimentoConsensi"/></con:call></con:operation><con:operation id="2b39fa53-9ea0-4aa0-818c-4546e348ca7a" isOneWay="false" action="http://v1.cliente.anagr.be.xanage.credem.it/inserimentoDatiAnagrafici" name="inserimentoDatiAnagrafici" bindingOperationName="inserimentoDatiAnagrafici" type="Request-Response" outputName="inserimentoDatiAnagraficiResponse" inputName="inserimentoDatiAnagraficiRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="36fa9486-efda-4920-92da-de3eb9a6ebc9" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:inserimentoDatiAnagraficiRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.cliente.anagr.be.xanage.credem.it/inserimentoDatiAnagrafici"/></con:call></con:operation><con:operation id="130b086c-5c1a-4d55-9e44-aa8850e85b96" isOneWay="false" action="http://v1.cliente.anagr.be.xanage.credem.it/inserimentoDatiComplementari" name="inserimentoDatiComplementari" bindingOperationName="inserimentoDatiComplementari" type="Request-Response" outputName="inserimentoDatiComplementariResponse" inputName="inserimentoDatiComplementariRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0279b858-5a4e-48b3-a5f6-3d815eae740d" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:inserimentoDatiComplementariRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.cliente.anagr.be.xanage.credem.it/inserimentoDatiComplementari"/></con:call></con:operation><con:operation id="181eeef6-8151-4c3d-a302-494c675c2de6" isOneWay="false" action="http://v1.cliente.anagr.be.xanage.credem.it/inserimentoDatiFiscali" name="inserimentoDatiFiscali" bindingOperationName="inserimentoDatiFiscali" type="Request-Response" outputName="inserimentoDatiFiscaliResponse" inputName="inserimentoDatiFiscaliRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b2092995-2c00-4333-8e17-05ff412c6cd6" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:inserimentoDatiFiscaliRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.cliente.anagr.be.xanage.credem.it/inserimentoDatiFiscali"/></con:call></con:operation><con:operation id="9ec5c16a-56b6-4a45-884a-b876df6be852" isOneWay="false" action="http://v1.cliente.anagr.be.xanage.credem.it/inserimentoDocumenti" name="inserimentoDocumenti" bindingOperationName="inserimentoDocumenti" type="Request-Response" outputName="inserimentoDocumentiResponse" inputName="inserimentoDocumentiRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="72d7c13f-3019-4e8f-9393-d0c7bf37c26e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:inserimentoDocumentiRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.cliente.anagr.be.xanage.credem.it/inserimentoDocumenti"/></con:call></con:operation><con:operation id="1b91d3e4-8163-48bf-ac6c-a164e1c93f78" isOneWay="false" action="http://v1.cliente.anagr.be.xanage.credem.it/inserimentoGestore" name="inserimentoGestore" bindingOperationName="inserimentoGestore" type="Request-Response" outputName="inserimentoGestoreResponse" inputName="inserimentoGestoreRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="965fc0ec-c532-4d43-be8b-9ec8e945d782" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:inserimentoGestoreRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.cliente.anagr.be.xanage.credem.it/inserimentoGestore"/></con:call></con:operation><con:operation id="645e6921-8b16-4c64-baff-b37ac453b0c8" isOneWay="false" action="http://v1.cliente.anagr.be.xanage.credem.it/inserimentoRecapitiPostali" name="inserimentoRecapitiPostali" bindingOperationName="inserimentoRecapitiPostali" type="Request-Response" outputName="inserimentoRecapitiPostaliResponse" inputName="inserimentoRecapitiPostaliRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b184fec1-1dd6-46fc-a864-6ebcbd6b0092" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:inserimentoRecapitiPostaliRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.cliente.anagr.be.xanage.credem.it/inserimentoRecapitiPostali"/></con:call></con:operation><con:operation id="0e1958a5-7ed8-4f2b-8579-89debef72216" isOneWay="false" action="http://v1.cliente.anagr.be.xanage.credem.it/recuperaAltriDatiIdentificativi" name="recuperaAltriDatiIdentificativi" bindingOperationName="recuperaAltriDatiIdentificativi" type="Request-Response" outputName="recuperaAltriDatiIdentificativiResponse" inputName="recuperaAltriDatiIdentificativiRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="234fe1b2-6a8b-4a7e-a8e1-e9ad79f1506a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:recuperaAltriDatiIdentificativiRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.cliente.anagr.be.xanage.credem.it/recuperaAltriDatiIdentificativi"/></con:call></con:operation><con:operation id="3bc235bc-7c82-4817-b0ae-7ee380881b02" isOneWay="false" action="http://v1.cliente.anagr.be.xanage.credem.it/recuperaAttivitaRisultatiRischiosita" name="recuperaAttivitaRisultatiRischiosita" bindingOperationName="recuperaAttivitaRisultatiRischiosita" type="Request-Response" outputName="recuperaAttivitaRisultatiRischiositaResponse" inputName="recuperaAttivitaRisultatiRischiositaRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="53e4d8e6-0dc4-4621-8a33-c958838edc4e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:recuperaAttivitaRisultatiRischiositaRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.cliente.anagr.be.xanage.credem.it/recuperaAttivitaRisultatiRischiosita"/></con:call></con:operation><con:operation id="1c92735b-b642-46ef-9b66-68bdf4e53f7f" isOneWay="false" action="http://v1.cliente.anagr.be.xanage.credem.it/recuperaBandierine" name="recuperaBandierine" bindingOperationName="recuperaBandierine" type="Request-Response" outputName="recuperaBandierineResponse" inputName="recuperaBandierineRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f3914337-be9a-4029-a11c-3e90a7bc5497" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:recuperaBandierineRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.cliente.anagr.be.xanage.credem.it/recuperaBandierine"/></con:call></con:operation><con:operation id="2fa865f4-2f88-4afe-92d5-44d63227f982" isOneWay="false" action="http://v1.cliente.anagr.be.xanage.credem.it/recuperaCollegamenti" name="recuperaCollegamenti" bindingOperationName="recuperaCollegamenti" type="Request-Response" outputName="recuperaCollegamentiResponse" inputName="recuperaCollegamentiRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0b092b50-87ff-475b-81d1-98233dd31989" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:recuperaCollegamentiRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.cliente.anagr.be.xanage.credem.it/recuperaCollegamenti"/></con:call></con:operation><con:operation id="07aefd23-b9e1-427f-be7f-7c572f644be3" isOneWay="false" action="http://v1.cliente.anagr.be.xanage.credem.it/recuperaConsensiPrivacy" name="recuperaConsensiPrivacy" bindingOperationName="recuperaConsensiPrivacy" type="Request-Response" outputName="recuperaConsensiPrivacyResponse" inputName="recuperaConsensiPrivacyRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="1b3b47cb-4d3d-40e5-8500-d415f2c40219" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:recuperaConsensiPrivacyRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.cliente.anagr.be.xanage.credem.it/recuperaConsensiPrivacy"/></con:call></con:operation><con:operation id="d08eab8c-d00c-46f2-83cb-5b4c4a3529c3" isOneWay="false" action="http://v1.cliente.anagr.be.xanage.credem.it/recuperaDatiComplementari" name="recuperaDatiComplementari" bindingOperationName="recuperaDatiComplementari" type="Request-Response" outputName="recuperaDatiComplementariResponse" inputName="recuperaDatiComplementariRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0fad729e-84f5-4477-aec2-9211280aec00" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:recuperaDatiComplementariRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.cliente.anagr.be.xanage.credem.it/recuperaDatiComplementari"/></con:call></con:operation><con:operation id="b261534f-46af-428a-896a-1656e77a425c" isOneWay="false" action="http://v1.cliente.anagr.be.xanage.credem.it/recuperaDatiFiscali" name="recuperaDatiFiscali" bindingOperationName="recuperaDatiFiscali" type="Request-Response" outputName="recuperaDatiFiscaliResponse" inputName="recuperaDatiFiscaliRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="01e13ec5-af71-41d6-9cb3-88c2f42b4510" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:recuperaDatiFiscaliRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.cliente.anagr.be.xanage.credem.it/recuperaDatiFiscali"/></con:call></con:operation><con:operation id="9a949fa1-6abd-439c-9de2-c3c61d8733a9" isOneWay="false" action="http://v1.cliente.anagr.be.xanage.credem.it/recuperaDatiIdentificativi" name="recuperaDatiIdentificativi" bindingOperationName="recuperaDatiIdentificativi" type="Request-Response" outputName="recuperaDatiIdentificativiResponse" inputName="recuperaDatiIdentificativiRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="6cab770b-4e64-4d0a-bf7c-adc3742f9141" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:recuperaDatiIdentificativiRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.cliente.anagr.be.xanage.credem.it/recuperaDatiIdentificativi"/></con:call></con:operation><con:operation id="1279fe9b-f10a-435e-8460-3d405aa12a33" isOneWay="false" action="http://v1.cliente.anagr.be.xanage.credem.it/recuperaDocumentoRiconoscimento" name="recuperaDocumentoRiconoscimento" bindingOperationName="recuperaDocumentoRiconoscimento" type="Request-Response" outputName="recuperaDocumentoRiconoscimentoResponse" inputName="recuperaDocumentoRiconoscimentoRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="22130c58-6012-4456-ac5b-ecbba6750a44" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:recuperaDocumentoRiconoscimentoRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.cliente.anagr.be.xanage.credem.it/recuperaDocumentoRiconoscimento"/></con:call></con:operation><con:operation id="887d2732-6679-48ed-9e40-6c68a577f26c" isOneWay="false" action="http://v1.cliente.anagr.be.xanage.credem.it/recuperaRuoli" name="recuperaRuoli" bindingOperationName="recuperaRuoli" type="Request-Response" outputName="recuperaRuoliResponse" inputName="recuperaRuoliRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="49419e55-4886-40e6-957e-d37a25394882" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:recuperaRuoliRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.cliente.anagr.be.xanage.credem.it/recuperaRuoli"/></con:call></con:operation><con:operation id="40bf0c68-93a2-4aab-aaae-84eddb597163" isOneWay="false" action="http://v1.cliente.anagr.be.xanage.credem.it/ricercaAttivita" name="ricercaAttivita" bindingOperationName="ricercaAttivita" type="Request-Response" outputName="ricercaAttivitaResponse" inputName="ricercaAttivitaRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="1eca2b3f-552d-4ae4-a2ab-ffb02f449a6e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:ricercaAttivitaRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.cliente.anagr.be.xanage.credem.it/ricercaAttivita"/></con:call></con:operation><con:operation id="07306c92-59e1-4679-8e0e-e7e5f5bf3ff5" isOneWay="false" action="http://v1.cliente.anagr.be.xanage.credem.it/ricercaCdg" name="ricercaCdg" bindingOperationName="ricercaCdg" type="Request-Response" outputName="RicercaCdgResponse" inputName="RicercaCdgRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="2c9e5bc3-3c76-463f-bd7a-b4a538f4bb60" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:ricercaCdgRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.cliente.anagr.be.xanage.credem.it/ricercaCdg"/></con:call></con:operation><con:operation id="5e46f61d-d47f-4942-9351-9e1badbdb914" isOneWay="false" action="http://v1.cliente.anagr.be.xanage.credem.it/ricercaIndirizzo" name="ricercaIndirizzo" bindingOperationName="ricercaIndirizzo" type="Request-Response" outputName="RicercaIndirizzoResponse" inputName="RicercaIndirizzoRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b34c43a1-29f8-45c6-a014-56b86975955b" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:ricercaIndirizzoRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.cliente.anagr.be.xanage.credem.it/ricercaIndirizzo"/></con:call></con:operation><con:operation id="73af4ebb-aeb6-4af6-883d-a3fb81b21016" isOneWay="false" action="http://v1.cliente.anagr.be.xanage.credem.it/ricercaPortafoglio" name="ricercaPortafoglio" bindingOperationName="ricercaPortafoglio" type="Request-Response" outputName="ricercaPortafoglioResponse" inputName="ricercaPortafoglioRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="883eec14-839d-41c9-a290-d552254dffcb" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:ricercaPortafoglioRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.cliente.anagr.be.xanage.credem.it/ricercaPortafoglio"/></con:call></con:operation><con:operation id="0526da6d-eea6-4542-80c6-e989329f4794" isOneWay="false" action="http://v1.cliente.anagr.be.xanage.credem.it/ricercaProfessioni" name="ricercaProfessioni" bindingOperationName="ricercaProfessioni" type="Request-Response" outputName="ricercaProfessioniResponse" inputName="ricercaProfessioniRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="7d092d4b-d773-4ff2-bf92-35870a7bf01a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:ricercaProfessioniRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.cliente.anagr.be.xanage.credem.it/ricercaProfessioni"/></con:call></con:operation><con:operation id="4cd8bbce-ef4e-4f07-aac6-792d6c81ff35" isOneWay="false" action="http://v1.cliente.anagr.be.xanage.credem.it/ricercaTitolistudio" name="ricercaTitolistudio" bindingOperationName="ricercaTitolistudio" type="Request-Response" outputName="ricercaTitolistudioResponse" inputName="ricercaTitolistudioRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0938d2e2-6e65-4076-89d1-c1c5deb5f789" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:ricercaTitolistudioRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.cliente.anagr.be.xanage.credem.it/ricercaTitolistudio"/></con:call></con:operation><con:operation id="3e91ac6d-5e5d-4546-8fb6-a567e57d7f85" isOneWay="false" action="http://v1.cliente.anagr.be.xanage.credem.it/trasformazioneExClienteCdg" name="trasformazioneExClienteCdg" bindingOperationName="trasformazioneExClienteCdg" type="Request-Response" outputName="TrasformazioneExClienteCdgResponse" inputName="TrasformazioneExClienteCdgRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="9827e642-ae5c-471c-890a-53a6b58e9cb2" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:trasformazioneExClienteCdgRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.cliente.anagr.be.xanage.credem.it/trasformazioneExClienteCdg"/></con:call></con:operation><con:operation id="b54cfa6a-10df-42c7-b479-70881864403c" isOneWay="false" action="http://v1.cliente.anagr.be.xanage.credem.it/verificaCompletezzaDatiAnagrafici" name="verificaCompletezzaDatiAnagrafici" bindingOperationName="verificaCompletezzaDatiAnagrafici" type="Request-Response" outputName="verificaCompletezzaDatiAnagraficiResponse" inputName="verificaCompletezzaDatiAnagraficiRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="69e2d2a3-8f25-4e6f-9f3f-6e0b2a6bf746" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:verificaCompletezzaDatiAnagraficiRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.cliente.anagr.be.xanage.credem.it/verificaCompletezzaDatiAnagrafici"/></con:call></con:operation><con:operation id="763098cd-0df4-4ff7-b883-68c0f80bb73f" isOneWay="false" action="http://v1.cliente.anagr.be.xanage.credem.it/verificaIndiziResidenzaFiscaleEstera" name="verificaIndiziResidenzaFiscaleEstera" bindingOperationName="verificaIndiziResidenzaFiscaleEstera" type="Request-Response" outputName="verificaIndiziResidenzaFiscaleEsteraResponse" inputName="verificaIndiziResidenzaFiscaleEsteraRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ba575885-2fe7-475e-97ec-4aad8677a52e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:verificaIndiziResidenzaFiscaleEsteraRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.cliente.anagr.be.xanage.credem.it/verificaIndiziResidenzaFiscaleEstera"/></con:call></con:operation><con:operation id="39bf3df5-479b-436a-855d-484f5504ecae" isOneWay="false" action="http://v1.cliente.anagr.be.xanage.credem.it/verificaMinorenne" name="verificaMinorenne" bindingOperationName="verificaMinorenne" type="Request-Response" outputName="VerificaMinorenneResponse" inputName="VerificaMinorenneRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ecf4e367-496b-41bd-a1b4-d511f5b1e786" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:verificaMinorenneRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.cliente.anagr.be.xanage.credem.it/verificaMinorenne"/></con:call></con:operation><con:operation id="95ad97f8-1aea-439e-96b5-d27783a950fa" isOneWay="false" action="http://v1.cliente.anagr.be.xanage.credem.it/verificaRecapitielettronici" name="verificaRecapitielettronici" bindingOperationName="verificaRecapitielettronici" type="Request-Response" outputName="verificaRecapitielettroniciResponse" inputName="verificaRecapitielettroniciRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="cee70377-e1d6-4c33-b622-f9e008057bf2" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:verificaRecapitielettroniciRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.cliente.anagr.be.xanage.credem.it/verificaRecapitielettronici"/></con:call></con:operation><con:operation id="6ed7fdc2-28f6-48fa-90fc-bce72f061e07" isOneWay="false" action="http://v1.cliente.anagr.be.xanage.credem.it/verificaValiditaDocumento" name="verificaValiditaDocumento" bindingOperationName="verificaValiditaDocumento" type="Request-Response" outputName="VerificaValiditaDocumentoResponse" inputName="VerificaValiditaDocumentoRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="23250498-ed20-4232-a575-ed492ab8befb" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:verificaValiditaDocumentoRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.cliente.anagr.be.xanage.credem.it/verificaValiditaDocumento"/></con:call></con:operation><con:operation id="ee3dabaf-81dc-46fd-9b50-e41472042edf" isOneWay="false" action="http://v1.cliente.anagr.be.xanage.credem.it/verificaValiditaDocumentoRiconoscimento" name="verificaValiditaDocumentoRiconoscimento" bindingOperationName="verificaValiditaDocumentoRiconoscimento" type="Request-Response" outputName="verificaValiditaDocumentoRiconoscimentoResponse" inputName="verificaValiditaDocumentoRiconoscimentoRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d5459e6c-6779-482c-854e-d4e3144a7f34" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:verificaValiditaDocumentoRiconoscimentoRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.cliente.anagr.be.xanage.credem.it/verificaValiditaDocumentoRiconoscimento"/></con:call></con:operation></con:interface><con:testSuite id="41734c55-ff87-42ec-85c9-c5d8c8787039" name="CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="2e6afe53-bda2-44a2-80d1-f103639385dc" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="aggiornaBandierine TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="c75ed72e-c08e-4748-81a2-016b857e68c3" name="aggiornaBandierine"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding</con:interface><con:operation>aggiornaBandierine</con:operation><con:request name="aggiornaBandierine" id="b8bdeff6-02b1-4b56-a057-7cb8f0dbb200"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://10.224.40.62:443/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">
+	<soapenv:Header>
+	</soapenv:Header>
+	<soapenv:Body>
+		<v1:recuperaBandierineRequest>
+		<testataTecnica>
+			<infoTestataTecnica>
+				<istituto>001</istituto>
+				<UO>00027</UO>
+				<lingua>it</lingua>
+				<!--Optional:-->
+				<timeOut>120</timeOut>
+				<canale>BANVIR</canale>
+			</infoTestataTecnica>
+			<profiloUtente>
+				<utente>UT83305</utente>
+				<authToken>tIpXs5uvXZIuNeh3p+/TdA==</authToken>
+				<nomeUtente>MATTEO</nomeUtente>
+				<cognomeUtente>CASTELLI</cognomeUtente>
+			</profiloUtente>
+			<!--Optional:-->
+			<profiloCliente>
+				<CDG>000000000</CDG>
+				<nomeCliente>luca</nomeCliente>
+				<cognomeCliente>bressanelli</cognomeCliente>
+				<contrattoTelematico>21098232</contrattoTelematico>
+			</profiloCliente>
+			<infoCorrelazione>
+				<idOperazione>08600002</idOperazione>
+				<idSistemaChiamante>123.456.789.123</idSistemaChiamante>
+				<idSessione>26</idSessione>
+				<idCorrelazione>11111111111111111111111111111111</idCorrelazione>
+			</infoCorrelazione>
+			<!--Optional:-->
+			<infoForzatura>
+				<!--Optional:-->
+				<flagTipoFunzione>E</flagTipoFunzione>
+				<!--Optional:-->
+				<flagForzatura>N</flagForzatura>
+			</infoForzatura>
+			<!--Optional:-->
+			<infoOperazione>
+				<!--Optional:-->
+				<istitutoRapporto>001</istitutoRapporto>
+				<!--Optional:-->
+				<servizioRapporto>000</servizioRapporto>
+				<!--Optional:-->
+				<filialeRapporto>00000</filialeRapporto>
+				<!--Optional:-->
+				<nrRapporto>999999999</nrRapporto>
+				<!--Optional:-->
+				<sottoNrRapporto>55555</sottoNrRapporto>
+				<!--Optional:-->
+				<divisa>EUR</divisa>
+				<!--Optional:-->
+				<importo>000000000000000000</importo>
+				<!--Optional:-->
+				<segno>+</segno>
+				<!--Optional:-->
+				<dataContabile>2002-05-30</dataContabile>
+				<!--Optional:-->
+				<idFunzioneContabile>QII1</idFunzioneContabile>
+				<!--Optional:-->
+				<istitutoFisico>333</istitutoFisico>
+				<!--Optional:-->
+				<UOFisico>34634</UOFisico>
+				<!--Optional:-->
+				<utenteFisico>UT0AC25</utenteFisico>
+			</infoOperazione>
+			<!--Optional:-->
+			<infoFingerPrint>
+				<codiceFingerPrint></codiceFingerPrint>
+			</infoFingerPrint>
+		</testataTecnica>
+		<codiceNdg>15786846</codiceNdg>
+		<bandierineNumeroOutput>50</bandierineNumeroOutput>
+		</v1:recuperaBandierineRequest>
+	</soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="Simple Contains" id="8fa9e124-fc4b-48a1-9bc0-1704f7c51540" name="Contains"><con:configuration><token>E</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://v1.cliente.anagr.be.xanage.credem.it/aggiornaBandierine" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="c2583d31-29f5-4880-83b1-b0c714f9af23" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="aggiornamentoCdg TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="9112bfbb-ded2-49e8-9eef-1aedeb4cc70c" name="aggiornamentoCdg"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding</con:interface><con:operation>aggiornamentoCdg</con:operation><con:request name="aggiornamentoCdg" id="53348df9-2e91-4706-a25c-ff99d7cdda0c"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldmckas01.group.credem.net:443/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:aggiornamentoCdgRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://v1.cliente.anagr.be.xanage.credem.it/aggiornamentoCdg" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="d75ed4c5-1c11-4cb6-a7a4-6d92e66a98dc" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="aggiornamentoClienteRiconosciuto TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="80bde051-5e46-4890-8e1e-ba557b2486df" name="aggiornamentoClienteRiconosciuto"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding</con:interface><con:operation>aggiornamentoClienteRiconosciuto</con:operation><con:request name="aggiornamentoClienteRiconosciuto" id="9ef39025-a1cb-4d41-96a0-08f9fc9c06c5"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:aggiornamentoClienteRiconosciutoRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://v1.cliente.anagr.be.xanage.credem.it/aggiornamentoClienteRiconosciuto"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="410c9ab3-81d8-4cc7-9471-f2d026b90a79" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="aggiornamentoConsensiPrivacy TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="bb7ad2eb-9be2-401e-8116-40f98119c723" name="aggiornamentoConsensiPrivacy"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding</con:interface><con:operation>aggiornamentoConsensiPrivacy</con:operation><con:request name="aggiornamentoConsensiPrivacy" id="6fe0c6b9-8ff8-491f-86ed-6aa973c7196c"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:aggiornamentoConsensiPrivacyRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://v1.cliente.anagr.be.xanage.credem.it/aggiornamentoConsensiPrivacy"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="898ce8cb-081c-401a-b728-95f557218155" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="annulloPraticheAnagraficheBPM TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="9c07e0c0-d54d-4d0b-85a4-9578d438fb18" name="annulloPraticheAnagraficheBPM"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding</con:interface><con:operation>annulloPraticheAnagraficheBPM</con:operation><con:request name="annulloPraticheAnagraficheBPM" id="9964bceb-294a-46dd-8340-8aac3e01c493"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:annulloPraticheAnagraficheBPMRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://v1.cliente.anagr.be.xanage.credem.it/annulloPraticheAnagraficheBPM"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="8f96ad8f-d109-43e7-95e4-5df1534c503c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="cancellazioneConsensiPrivacy TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="c42c7cdb-3319-4829-b543-f3a8b0e66428" name="cancellazioneConsensiPrivacy"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding</con:interface><con:operation>cancellazioneConsensiPrivacy</con:operation><con:request name="cancellazioneConsensiPrivacy" id="884e01bd-9b7e-43b5-8b4d-13f3a6a3e000"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:cancellazioneConsensiPrivacyRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://v1.cliente.anagr.be.xanage.credem.it/cancellazioneConsensiPrivacy"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="1acac192-6f63-4889-9b3b-264c26d8482d" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="estrazioneInfoCf TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="9820bf64-2bc1-4217-a69d-2c8fc7875487" name="estrazioneInfoCf"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding</con:interface><con:operation>estrazioneInfoCf</con:operation><con:request name="estrazioneInfoCf" id="e7e10ced-fd11-4ba8-9d81-410a9ddddaab"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:estrazioneInfoCfRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://v1.cliente.anagr.be.xanage.credem.it/estrazioneInfoCf"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="b1200ddf-4ef3-4f7b-bea4-f246712802c8" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="inserimentoAttivita TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="ba4a360a-3976-4b9b-a64f-de8f27db6d92" name="inserimentoAttivita"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding</con:interface><con:operation>inserimentoAttivita</con:operation><con:request name="inserimentoAttivita" id="7f377fe7-de7b-4ec5-b6ec-1b1840fa792a"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:inserimentoAttivitaRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://v1.cliente.anagr.be.xanage.credem.it/inserimentoAttivita"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="0c811584-797e-45a2-8647-dbdbd5873717" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="inserimentoCdg TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="00df0fff-5a2e-431e-88ac-5ab73a856167" name="inserimentoCdg"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding</con:interface><con:operation>inserimentoCdg</con:operation><con:request name="inserimentoCdg" id="1c488299-a76b-42f3-aab2-1cb5374889b4"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:inserimentoCdgRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://v1.cliente.anagr.be.xanage.credem.it/inserimentoCdg"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="6e70dfb2-bf0b-4778-9ed0-0c0daf7579b2" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="inserimentoConsensi TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="d20b6491-806e-4ac7-b25f-7da7024a81e9" name="inserimentoConsensi"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding</con:interface><con:operation>inserimentoConsensi</con:operation><con:request name="inserimentoConsensi" id="f13ab0d7-391a-44fb-916c-368f8b14b91d"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:inserimentoConsensiRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://v1.cliente.anagr.be.xanage.credem.it/inserimentoConsensi"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="0b531a8f-4e0c-4945-aa3e-819f0347ca6c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="inserimentoDatiAnagrafici TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="4861f94f-d15d-4fdb-b908-3c2d20fdfb2a" name="inserimentoDatiAnagrafici"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding</con:interface><con:operation>inserimentoDatiAnagrafici</con:operation><con:request name="inserimentoDatiAnagrafici" id="3a5337b1-3fb9-44b2-97b9-d65d49ac8db2"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:inserimentoDatiAnagraficiRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://v1.cliente.anagr.be.xanage.credem.it/inserimentoDatiAnagrafici"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="2f61ea84-2561-40a8-b60f-c47e27eb1efe" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="inserimentoDatiComplementari TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="5671b480-5824-4fa2-a601-f69b3d0b36fe" name="inserimentoDatiComplementari"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding</con:interface><con:operation>inserimentoDatiComplementari</con:operation><con:request name="inserimentoDatiComplementari" id="f316dc7f-a1c3-4083-89b1-2840b7088988"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:inserimentoDatiComplementariRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://v1.cliente.anagr.be.xanage.credem.it/inserimentoDatiComplementari"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="b658de5a-160e-4ff1-8b44-a47060a451a7" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="inserimentoDatiFiscali TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="00535066-a100-4d51-8fd4-a6aa0d791a79" name="inserimentoDatiFiscali"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding</con:interface><con:operation>inserimentoDatiFiscali</con:operation><con:request name="inserimentoDatiFiscali" id="a3382f1c-17cb-4a6a-b80b-cf08150e7479"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:inserimentoDatiFiscaliRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://v1.cliente.anagr.be.xanage.credem.it/inserimentoDatiFiscali"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="f387bd69-e942-4906-ab11-a8b79f4480c2" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="inserimentoDocumenti TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="434609a4-0a02-45a2-98ba-6cfd84061d72" name="inserimentoDocumenti"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding</con:interface><con:operation>inserimentoDocumenti</con:operation><con:request name="inserimentoDocumenti" id="f6ab0550-59f2-4147-8184-ee9797031a39"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:inserimentoDocumentiRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://v1.cliente.anagr.be.xanage.credem.it/inserimentoDocumenti"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="6c85475c-cef0-472e-b700-4daaa1bc3823" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="inserimentoGestore TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="a004f61b-96b0-467c-b442-90e6012b996b" name="inserimentoGestore"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding</con:interface><con:operation>inserimentoGestore</con:operation><con:request name="inserimentoGestore" id="ccb678a1-d31a-4e75-b1a7-dfbd8ba12e62"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:inserimentoGestoreRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://v1.cliente.anagr.be.xanage.credem.it/inserimentoGestore"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="b8f9db1d-38c3-4160-9ef3-d11dd0cb061e" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="inserimentoRecapitiPostali TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="859dec57-0cd6-4796-bd13-e68accd796d2" name="inserimentoRecapitiPostali"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding</con:interface><con:operation>inserimentoRecapitiPostali</con:operation><con:request name="inserimentoRecapitiPostali" id="1a78620d-2dfc-4ca5-983f-5d809256951a"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:inserimentoRecapitiPostaliRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://v1.cliente.anagr.be.xanage.credem.it/inserimentoRecapitiPostali"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="5f0aa249-991f-4687-803a-9dfd25474001" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="recuperaAltriDatiIdentificativi TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="75ba7ca8-8a27-453f-808a-89989979f06d" name="recuperaAltriDatiIdentificativi"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding</con:interface><con:operation>recuperaAltriDatiIdentificativi</con:operation><con:request name="recuperaAltriDatiIdentificativi" id="04c69a4d-54a0-4b34-b82d-32b4a93ae396"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:recuperaAltriDatiIdentificativiRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://v1.cliente.anagr.be.xanage.credem.it/recuperaAltriDatiIdentificativi"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="b61371e8-00c3-4afb-9063-a96221bcc032" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="recuperaAttivitaRisultatiRischiosita TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="97e48abe-0861-41fc-8c39-321484c66b49" name="recuperaAttivitaRisultatiRischiosita"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding</con:interface><con:operation>recuperaAttivitaRisultatiRischiosita</con:operation><con:request name="recuperaAttivitaRisultatiRischiosita" id="ad5e3518-c4fd-4518-9af0-9ea6d00c7a21"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:recuperaAttivitaRisultatiRischiositaRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://v1.cliente.anagr.be.xanage.credem.it/recuperaAttivitaRisultatiRischiosita"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="2c4ecb5d-db12-4549-b792-1c49d58188c1" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="recuperaBandierine TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="ef166e66-26bc-4f2c-891b-9762ce997609" name="recuperaBandierine"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding</con:interface><con:operation>recuperaBandierine</con:operation><con:request name="recuperaBandierine" id="d29d0d30-d35c-42da-9f50-a4654fa653de"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:recuperaBandierineRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://v1.cliente.anagr.be.xanage.credem.it/recuperaBandierine"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="7b90480e-83c4-4d31-8dbb-2b839ee8bffc" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="recuperaCollegamenti TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="af0b6650-ab81-42a7-bfee-051ff67d7ef8" name="recuperaCollegamenti"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding</con:interface><con:operation>recuperaCollegamenti</con:operation><con:request name="recuperaCollegamenti" id="7f49109b-c287-47f3-ab2d-28112c40c404"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:recuperaCollegamentiRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://v1.cliente.anagr.be.xanage.credem.it/recuperaCollegamenti"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="1d2bade1-df02-458c-8b61-88a98c98a662" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="recuperaConsensiPrivacy TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="2f4073c6-437f-433d-93ea-5e607f911466" name="recuperaConsensiPrivacy"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding</con:interface><con:operation>recuperaConsensiPrivacy</con:operation><con:request name="recuperaConsensiPrivacy" id="dbf920e1-e6f6-4793-8ab9-2b53853676e1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:recuperaConsensiPrivacyRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://v1.cliente.anagr.be.xanage.credem.it/recuperaConsensiPrivacy"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="4d9012da-db47-483e-a626-269d7eca5058" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="recuperaDatiComplementari TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="56d282b3-0048-43be-a60b-01e4e442ffbc" name="recuperaDatiComplementari"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding</con:interface><con:operation>recuperaDatiComplementari</con:operation><con:request name="recuperaDatiComplementari" id="7870c1ee-4368-415b-a8e0-af6872f9adcd"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:recuperaDatiComplementariRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://v1.cliente.anagr.be.xanage.credem.it/recuperaDatiComplementari"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="4006c661-5c4c-417d-8611-e448fda6582e" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="recuperaDatiFiscali TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="a5cad23f-83cd-4168-b1f2-1acdc1962a1c" name="recuperaDatiFiscali"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding</con:interface><con:operation>recuperaDatiFiscali</con:operation><con:request name="recuperaDatiFiscali" id="76e3ab04-a304-4fbc-a723-6933efa1ebc7"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:recuperaDatiFiscaliRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://v1.cliente.anagr.be.xanage.credem.it/recuperaDatiFiscali"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="e755356e-88e7-4feb-9b54-f4dcbf58ad20" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="recuperaDatiIdentificativi TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="c79eb143-0dcb-4408-a29d-477eca232167" name="recuperaDatiIdentificativi"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding</con:interface><con:operation>recuperaDatiIdentificativi</con:operation><con:request name="recuperaDatiIdentificativi" id="1fd10330-b704-4fc9-b2e0-65920a110b7a"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:recuperaDatiIdentificativiRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://v1.cliente.anagr.be.xanage.credem.it/recuperaDatiIdentificativi"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="c2d2ba33-97b2-4e9d-b2e7-fa723112ec8b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="recuperaDocumentoRiconoscimento TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="a928af42-4c55-40cd-a35e-71ee4c991e64" name="recuperaDocumentoRiconoscimento"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding</con:interface><con:operation>recuperaDocumentoRiconoscimento</con:operation><con:request name="recuperaDocumentoRiconoscimento" id="54550944-afc5-4b9b-9853-5c3375e53af4"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:recuperaDocumentoRiconoscimentoRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://v1.cliente.anagr.be.xanage.credem.it/recuperaDocumentoRiconoscimento"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="29a698f5-fed0-4d2a-9711-85a972acf908" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="recuperaRuoli TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="c2f4b89f-8720-45b0-8fc3-b24becef323d" name="recuperaRuoli"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding</con:interface><con:operation>recuperaRuoli</con:operation><con:request name="recuperaRuoli" id="9bd3ebf1-8fe9-49d0-8ee5-03c5cb421cdd"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:recuperaRuoliRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://v1.cliente.anagr.be.xanage.credem.it/recuperaRuoli"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="4b4af8cb-e1b9-4574-a335-1adfd69b8a91" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ricercaAttivita TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="1a5e3e61-42b7-4312-bfde-97090cb99cb6" name="ricercaAttivita"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding</con:interface><con:operation>ricercaAttivita</con:operation><con:request name="ricercaAttivita" id="f06f6bf2-dc73-4d11-a7b8-8ce21842fd8c"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:ricercaAttivitaRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://v1.cliente.anagr.be.xanage.credem.it/ricercaAttivita"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="e107db35-35e2-45af-b053-47e9126b78ed" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ricercaCdg TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="ecb0f5f1-71fa-4bfb-8344-b4fda13fbd21" name="ricercaCdg"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding</con:interface><con:operation>ricercaCdg</con:operation><con:request name="ricercaCdg" id="56f4c2be-7885-43e4-bcb4-28bacf8bb82e"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:ricercaCdgRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://v1.cliente.anagr.be.xanage.credem.it/ricercaCdg"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="7584e0d1-52e3-496c-94ab-47be8c99ac36" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ricercaIndirizzo TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="443ac6da-b311-4418-ab21-4b4270d31b6e" name="ricercaIndirizzo"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding</con:interface><con:operation>ricercaIndirizzo</con:operation><con:request name="ricercaIndirizzo" id="2454f03c-6305-4529-a995-35c21ec0ed17"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:ricercaIndirizzoRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://v1.cliente.anagr.be.xanage.credem.it/ricercaIndirizzo"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="c84ce6f7-e234-498c-869a-94aa4609bd5c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ricercaPortafoglio TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="c6b76d19-4756-41d9-9670-224fcc14bed3" name="ricercaPortafoglio"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding</con:interface><con:operation>ricercaPortafoglio</con:operation><con:request name="ricercaPortafoglio" id="515e66c4-5afc-4d18-92ba-88e3c1c29dcc"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:ricercaPortafoglioRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://v1.cliente.anagr.be.xanage.credem.it/ricercaPortafoglio"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="bd0ecd0f-e19c-4cb1-8073-362b52b6eb8b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ricercaProfessioni TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="e5f28cbf-2fd4-4a2b-8bac-0641ea7769d8" name="ricercaProfessioni"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding</con:interface><con:operation>ricercaProfessioni</con:operation><con:request name="ricercaProfessioni" id="6e2f224b-b042-4191-8162-0522b8a3b6e2"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:ricercaProfessioniRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://v1.cliente.anagr.be.xanage.credem.it/ricercaProfessioni"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="a093dc8e-545d-4306-a83d-9a3326b6bcd0" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ricercaTitolistudio TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="e166c0a9-9a1a-4abf-ae87-e7fabae33b16" name="ricercaTitolistudio"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding</con:interface><con:operation>ricercaTitolistudio</con:operation><con:request name="ricercaTitolistudio" id="bb70f9f4-89fa-4ac3-b290-a34b6c64f6eb"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:ricercaTitolistudioRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://v1.cliente.anagr.be.xanage.credem.it/ricercaTitolistudio"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="adc04648-16b5-4a52-9fa1-a13efa5e2321" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="trasformazioneExClienteCdg TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="71833571-c2bc-4c41-9998-d03e6e5a0224" name="trasformazioneExClienteCdg"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding</con:interface><con:operation>trasformazioneExClienteCdg</con:operation><con:request name="trasformazioneExClienteCdg" id="cadad351-5e83-4c27-a761-05c35201b57a"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:trasformazioneExClienteCdgRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://v1.cliente.anagr.be.xanage.credem.it/trasformazioneExClienteCdg"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="5e072e22-a22f-406b-934a-ee6d952b1d61" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="verificaCompletezzaDatiAnagrafici TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="48b724ae-0e3d-48d1-a02d-f5d810ac731d" name="verificaCompletezzaDatiAnagrafici"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding</con:interface><con:operation>verificaCompletezzaDatiAnagrafici</con:operation><con:request name="verificaCompletezzaDatiAnagrafici" id="351af335-6d2d-443c-bb38-ac5242a9ce4f"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:verificaCompletezzaDatiAnagraficiRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://v1.cliente.anagr.be.xanage.credem.it/verificaCompletezzaDatiAnagrafici"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="8f8cab20-dd7c-4b3f-b8b8-83461c82c2e4" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="verificaIndiziResidenzaFiscaleEstera TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="f98a2c65-763b-4ff4-8762-eb288ea3ba01" name="verificaIndiziResidenzaFiscaleEstera"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding</con:interface><con:operation>verificaIndiziResidenzaFiscaleEstera</con:operation><con:request name="verificaIndiziResidenzaFiscaleEstera" id="06b62c7a-4f7e-405c-b99e-ddc5b962c4c0"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:verificaIndiziResidenzaFiscaleEsteraRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://v1.cliente.anagr.be.xanage.credem.it/verificaIndiziResidenzaFiscaleEstera"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="4e1027e6-33db-44f0-850c-746699ba1aca" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="verificaMinorenne TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="9c26daa0-ef79-4962-b5df-c275f6a90459" name="verificaMinorenne"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding</con:interface><con:operation>verificaMinorenne</con:operation><con:request name="verificaMinorenne" id="4e2a83e2-7f0c-41fc-839f-c6ed59108734"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:verificaMinorenneRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://v1.cliente.anagr.be.xanage.credem.it/verificaMinorenne"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="0616c51d-6db6-4c30-9eed-d5764997e7e7" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="verificaRecapitielettronici TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="36c50777-cda5-494b-81e2-6efcc032e3fc" name="verificaRecapitielettronici"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding</con:interface><con:operation>verificaRecapitielettronici</con:operation><con:request name="verificaRecapitielettronici" id="0fd7009a-aed9-4b97-8fc0-4c3a33422f35"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:verificaRecapitielettroniciRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://v1.cliente.anagr.be.xanage.credem.it/verificaRecapitielettronici"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="c0be4b5e-f951-46a2-8730-2dde14ec4899" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="verificaValiditaDocumento TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="45668c07-ed3a-4daa-a004-51f1fe971847" name="verificaValiditaDocumento"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding</con:interface><con:operation>verificaValiditaDocumento</con:operation><con:request name="verificaValiditaDocumento" id="18210c51-fec0-44a8-a6b6-eff6fd7f5285"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:verificaValiditaDocumentoRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://v1.cliente.anagr.be.xanage.credem.it/verificaValiditaDocumento"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="6c2d872c-572c-4359-acc6-6d67acac44b7" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="verificaValiditaDocumentoRiconoscimento TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="668b7eaf-95bf-46b7-8cd6-e7bd2a493991" name="verificaValiditaDocumentoRiconoscimento"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding</con:interface><con:operation>verificaValiditaDocumentoRiconoscimento</con:operation><con:request name="verificaValiditaDocumentoRiconoscimento" id="090179dd-a848-49b7-8d8d-c7c2ffb754e5"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vr0cldbsresb05c.group.credem.net:7803/CR_XANAGE_BE_ANAGR_CLIENTE_V1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.cliente.anagr.be.xanage.credem.it">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:verificaValiditaDocumentoRiconoscimentoRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://v1.cliente.anagr.be.xanage.credem.it/verificaValiditaDocumentoRiconoscimento"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>

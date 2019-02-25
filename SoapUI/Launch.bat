@@ -1,0 +1,1 @@
+"C:\Program Files\SmartBear\ReadyAPI-2.5.0\bin\testrunner.bat" -s"CR_XANAGE_BE_ANAGR_CLIENTE_V1Binding TestSuite" -c"aggiornaBandierine TestCase" -r -a -j -J -fC:\@Lavoro\temp\SOAPUI_SILK\result -tC:\@Lavoro\temp\SOAPUI_SILK\soapui-settings.xml -i C:\@Lavoro\temp\SOAPUI_SILK\AnagrafeCliente-soapui-project.xml
